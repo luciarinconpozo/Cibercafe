@@ -70,30 +70,18 @@ header nav ul li {
 header nav ul li a:hover{
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
-
 }
+
 header nav ul li a{
   color: rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
 footer {
   background-color: black;
   border-radius: 20px 20px 0 0;
+  
 }
 
   footer p {
@@ -124,4 +112,8 @@ footer nav ul li {
 
 footer nav ul li a {
   color: white;
+}
+
+footer nav ul li a:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
