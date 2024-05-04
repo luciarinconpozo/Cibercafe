@@ -1,0 +1,15 @@
+
+/* body */
+form {
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 4px;
+}
+
+form label{
+    display: block;
+}
