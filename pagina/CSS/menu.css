@@ -1,0 +1,77 @@
+/* Botones de Menú */
+.botonMenu {
+    background-color: rgb(255, 0, 77);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.botonMenu:hover {
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Comida Descripción */
+.comidaDescripcion {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 20px; /* Aumento del espacio entre cada comida */
+    margin-bottom: 20px; /* Aumento del espacio entre cada comida */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.comidaDescripcion h2 {
+    color: rgb(0, 255, 0);
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Título más destacado */
+    font-size: 28px; /* Aumento del tamaño del título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.comidaDescripcion p {
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+}
+
+.comidaPrecio {
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+}
+
+/* Imágenes de Comida */
+.comidaImagen {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Espacio entre secciones */
+.entrantes, .principales, .postres, .bebidas {
+    margin-bottom: 40px; /* Aumento del espacio entre secciones */
+}
+
+/* Títulos h1 */
+h1 {
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra más destacada */
+    font-size: 36px; /* Aumento del tamaño del título */
+    margin-bottom: 20px; /* Espacio entre títulos */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Elementos li específicos */
+.principales li:nth-child(1) {
+    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+}
+.principales li:nth-child(2) {
+    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+}
+.principales li:nth-child(3) {
+    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+}
+
