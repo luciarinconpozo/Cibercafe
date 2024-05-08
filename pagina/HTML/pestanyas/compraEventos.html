@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/compraEventos.css">
 </head>
 
 <body>
@@ -23,29 +27,52 @@
         </nav>
     </header>
 
-    <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" required>
-    <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad" required>
-    <input type="number" id="CodigoPostal" name="CodigoPostal" placeholder="Codigo Postal" required>
-    <br>
-    <br>
-    <label for="hora">Datos bancarios: </label>
-    <br>
-    <input type="text" id="NombreDelTitular" name="NombreDelTitular" placeholder="Nombre del Titular" required>
-    <br>
-    <input type="number" id="NumeroTarjeta" name="NumeroTarjeta" placeholder="Numero Tarjeta" required>
-    <br>
-    <input type="date" id="FechaCaducidad" name="FechaCaducidad" placeholder="Fecha Caducidad" required>
-    <br>
-    <input type="number" id="CVV" name="CVV" placeholder="CVV" required>
-    <br>
-    <br>
-    <label for="hora">Datos del cliente: </label>
-    <br>
-    <input type="text" id="DNI" name="DNI" placeholder="DNI" required>
-    <br>
-    <input type="text" id="NombreApellidos" name="NombreApellidos" placeholder="Nombre y Apellidos" required>
-    <br>
-    <input type="email" id="Correo" name="Correo" placeholder="Correo" required>
+    <form>
+        <label id="tituloDireccion" for="hora" style="font-size: 25px;">Ingrese su dirección: </label>
+        <br>
+        <fieldset id="datosDireccion">
+            <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" style= "height: 20px;" required>
+            <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad" style= "height: 20px;" required>
+            <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal" style= "height: 20px;" required>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="hora" style="font-size: 25px;">Datos bancarios: </label>
+        <br>
+        <input type="text" id="NombreDelTitular" name="NombreDelTitular" placeholder="Nombre del Titular" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <input type="number" id="NumeroTarjeta" name="NumeroTarjeta" placeholder="Numero Tarjeta" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <input type="date" id="FechaCaducidad" name="FechaCaducidad" placeholder="Fecha Caducidad" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <input type="number" id="CVV" name="CVV" placeholder="CVV" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="hora" style="font-size: 25px;">Datos del cliente: </label>
+        <br>
+        <input type="text" id="DNI" name="DNI" placeholder="DNI" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <input type="text" id="NombreApellidos" name="NombreApellidos" placeholder="Nombre y Apellidos" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo" style="width: 250px; height: 30px;" required>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra" style="width: 200px; height: 45px;">
+    </form>
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
