@@ -16,130 +16,141 @@
         <div class="logo">
             <img src="../IMAGENES/icon.png" alt="Foto de Sherk tomando cerveza con Doraemon">
             <h1>La Ciénaga Cósmica</h1>
-
-
         </div>
         <nav>
             <ul>
                 <li><a href="../HTML/index.html">Inicio</a></li>
-                <li><a href="./pestanyas/menu.html">Menú</a></li>
+
                 <li><a href="./pestanyas/eventos.html">Eventos</a></li>
                 <li><a href="./pestanyas/reserva.html">Reserva</a></li>
                 <li><a href="./pestanyas/sobreNosotros.html">Sobre Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <div class="eslogan">
+        <h2>¡NO ACEPTARÉ SOBRAS!</h2>
+    </div>
 
     <div class="container">
-        <div class="botonesMenu">
-            <button class="botonMenu">Entrantes</button>
-            <button class="botonMenu">Platos Principales</button>
-            <button class="botonMenu">Postres</button>
-            <button class="botonMenu">Bebidas</button>
+        <div class="anclaMenu">                
+            <li><a href="#entrantes">Entrantes</a></li>
+            <li><a href="#principales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
         </div>
-    
-<!--ENTRANTES-->
-<div class="entrantes"><h1>Entrantes</h1>
-            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/jake_bacon_frito.jpg" alt="Entrantes">
+
+        <!--ENTRANTES-->
+        <div id="entrantes" class="entrantes"><h1>Entrantes</h1>
+            <h2>Bacon Frito</h2>
             <div class="comidaDescripcion">
-                <h2>Bacon Frito</h2>
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/jake_bacon_frito.jpg" alt="Entrantes">
                 <p>Bacon frito, bacon, bacon frito,Cojo el bacon y lo frío un poquito,
                     Bacon frito, esto está muy rico,  ¡Bacon fritooooo! </p>
                 <p class="comidaPrecio">Precio: 5€</p>
             </div>
 
-            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/benson.jpg" alt="Entrantes">
-            <div class="comidaDescripcion">
-                <h2>Bolas de Chicle</h2>
-                <p>Como tan muchacho</p>
-                <p class="comidaPrecio">Precio: 5€</p>
-            </div>
 
-            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/pescado_southpark.jpg" alt="Entrantes">
+            <h2>Palitos De Pescado</h2>
             <div class="comidaDescripcion">
-                <h2>Palitos De Pescado</h2>
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/pescado_southpark.jpg" alt="Entrantes">
                 <p>¿Te gustan los palitos de pescado?</p>
                 <p class="comidaPrecio">Precio: 5€</p>
             </div>
-
-</div>
-
-<!--PLATOS PRINCIPALES-->
-
-<div class="principales"><h1>Platos Principales</h1>
-        
-    <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/BakiBocadillo.jpg" alt="Plato Principal">
-    <div class="comidaDescripcion">
-        <h2>Menú Yujiro Hanma</h2>
-        <p>Incluye un bocadillo de carne mechada, lechuga y tomate, con unas patatas fritas y bebida energética</p>
-        <p class="comidaPrecio">Precio: 10€</p>
-    </div>
-
-     <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/leblanc_curry.jpg" alt="Plato Principal">
-     <div class="comidaDescripcion">
-        <h2>LeBlanc Curry</h2>
-        <p>Se desbloquea automáticamente en la historia (7/31 en Shibuya). Restaura 20 SP a todos los aliados. Ingredientes: </p>
-        <ul>
-            <li>Cebolla</li>
-            <li>Cerdo</li>
-            <li>Arroz</li>
-        </ul>   
-        <p class="comidaPrecio">Precio: 5€</p>
-    </div>
-
-            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/tortugas_ninjas_pizza.jpg" alt="Plato Principal">
-            <div class="comidaDescripcion">
-                    <h2>Pizza</h2>
-                    <p>¡Cowabunga!</p>
-                    <p class="comidaPrecio">Precio: 5€</p>
-            </div>
-
-            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/naruto_ramen.jpg" alt="Plato Principal">
-            <div class="comidaDescripcion">
-                    <h2>Ramen</h2>
-                    <p>Ramen de Naruto</p>
-                    <p class="comidaPrecio">Precio: 5€</p>
-            </div>
-
         </div>
 
-<!--POSTRES-->
-            <div class="postres"><h1>Postres</h1>
+        <!--PLATOS PRINCIPALES-->
+        <div id="principales" class="principales"><h1>Platos Principales</h1>
+            
+            <h2>MENÚ ESPECIAL</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/menuCienaga.png" alt="Plato Principal">
+                <p>Comete la especialidad de la casa, un dorayaki relleno de cebolla y carne picada.
+                    Acompañado todo con una bebida energética. Y no es todo, además podrás llevarte una camiseta con el logo 
+                de nuestro local completamente GRATIS. </p>
+                <p class="comidaPrecio">Precio: 10€</p>
+            </div>
+
+            <h2>Menú Yujiro Hanma</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/BakiBocadillo.jpg" alt="Plato Principal">
+                <p>Incluye un bocadillo de carne mechada, lechuga y tomate, con unas patatas fritas y bebida energética</p>
+                <p class="comidaPrecio">Precio: 10€</p>
+            </div>
+
+            <h2>LeBlanc Curry</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/leblanc_curry.jpg" alt="Plato Principal">
+                
+                <p>Se desbloquea automáticamente en la historia (7/31 en Shibuya). Restaura 20 SP a todos los aliados. Ingredientes: </p>
+                <ul>
+                    <li>Cebolla</li>
+                    <li>Cerdo</li>
+                    <li>Arroz</li>
+                </ul>
+                <p class="comidaPrecio">Precio: 5€</p>
+            </div>
+
+            <h2>Pizza</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/tortugas_ninjas_pizza.jpg" alt="Plato Principal">
+               
+                <p>¡Cowabunga!</p>
+                <p class="comidaPrecio">Precio: 5€</p>
+            </div>
+
+
+            <h2>Ramen</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/naruto_ramen.jpg" alt="Plato Principal">
+                
+                <p>Ramen de Naruto</p>
+                <p class="comidaPrecio">Precio: 5€</p>
+            </div>
+        </div>
+
+        <!--POSTRES-->
+        <div id="postres" class="postres"><h1>Postres</h1>
+            
+            <h2>Helados de Sal Marina</h2>
+            <div class="comidaDescripcion">
                 <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/helado_sal_marina.jpg" alt="Postres">
-                <div class="comidaDescripcion">
-                    <h2>Helados de Sal Marina</h2>
-                    <p>El sabor del helado mezcla tanto un sabor salado y un sabor dulce.</p>
-                    <p class="comidaPrecio">Precio: 10€</p>
-                </div>
-    
+                <p>El sabor del helado mezcla tanto un sabor salado y un sabor dulce.</p>
+                <p class="comidaPrecio">Precio: 10€</p>
             </div>
+        </div>
 
-<!--BEBIDAS-->
-            <div class="bebidas"><h1>Bebidas</h1>
+        <h2>Bolas de Chicle</h2>
+        <div class="comidaDescripcion">
+            <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/benson.jpg" alt="Entrantes">
+            <p>Como tan muchacho</p>
+            <p class="comidaPrecio">Precio: 5€</p>
+        </div>
+            
+        <!--BEBIDAS-->
+        <div id="bebidas" class="bebidas"><h1>Bebidas</h1>
+            
+            <h2>Franky Cola es una pepsi</h2>
+            <div class="comidaDescripcion">
                 <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/franky_cola.jpg" alt="Bebidas">
-                <div class="comidaDescripcion">
-                    <h2>Franky Cola es una pepsi</h2>
-                    <p>SUUUPER SACA TU LADO MÁS GUARRO</p>
-                    <p class="comidaPrecio">Precio: 1€</p>
-                </div>
-    
-                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/nuka_cola.jpg" alt="Bebidas">
-                <div class="comidaDescripcion">
-                    <h2>Nuka Cola</h2>
-                    <p>Nuka Cola</p>
-                    <p class="comidaPrecio">Precio: 1€</p>
-                </div>
-    
+                <p>SUUUPER SACA TU LADO MÁS GUARRO</p>
+                <p class="comidaPrecio">Precio: 1€</p>
             </div>
 
+            <h2>Nuka Cola</h2>
+            <div class="comidaDescripcion">
+                <img class="comidaImagen" src="../../IMAGENES/MenuImagenes/nuka_cola.jpg" alt="Bebidas">
+                <p>Nuka Cola</p>
+                <p class="comidaPrecio">Precio: 1€</p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
         <nav>
             <ul>
-                <li><a href="./pestanyas/avisoLegal.html">Aviso Legal</a></li>  
+                <li><a href="./pestanyas/avisoLegal.html">Aviso Legal</a></li>
                 <li><a href="./pestanyas/contacto.html">Contacto</a></li>
                 <li><a href="./pestanyas/crm_erp.html">CRM y ERP</a></li>
                 <li><a href="./pestanyas/politicaCookies.html">Política de Cookies</a></li>
@@ -148,7 +159,5 @@
             </ul>
         </nav>
     </footer>
-
-
 </body>
 </html>
