@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="ElCSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/reserva.css">
 </head>
 <body>
-    <fieldset>
-        <form>
-            <label for="fecha">Selecciona un dia: </label>
-            <input type="date" id="fecha" name="fecha">
-        </form>
-        <br>
-        <form>
-            <label for="hora">Selecciona una hora: </label>
-            <input type="time" id="hora" name="hora">
-        </form>
-        <br>
-        <form>
-            <label for="cantidad">Numero de asistentes: </label>
-            <input type="number" id="cantidad" name="cantidad" min="0" max="100" step="1">
-        </form>
-        <br>
-        <form>
-            <label for="nombre">Datos de contacto: </label>
-            <br>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-            <br>
-            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
-            <br>
-            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-          </form>
-    </fieldset>
+
+    <header>
+        <div class="logo">
+            <h1>La Ciénaga Cósmica</h1>
+            <img src="../../IMAGENES/icon.png" alt="Experto informático">
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./reserva.html">Reserva</a></li>
+                <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <form>
-        <input type="submit" value="Enviar">
+        <fieldset>
+            <br>
+            <label for="fecha" style="font-size: 22px;">Selecciona un dia: </label>
+            <br>
+            <input type="date" id="fecha" name="fecha" style="width: 220px; height: 50px;">
+            <br>
+            <br>
+            <br>
+            <label for="hora" style="font-size: 22px;">Selecciona una hora: </label>
+            <br>
+            <input type="time" id="hora" name="hora" style="width: 160px; height: 30px;">
+            <br>       
+            <br>
+            <br>
+            <label for="cantidad" style="font-size: 22px;">Numero de asistentes: </label>
+            <br>
+            <input type="number" id="cantidad" name="cantidad" min="0" max="50" step="1" style="width: 160px; height: 30px;">        
+            <br>        
+            <br>
+            <br>
+            <label for="nombre" style="font-size: 22px;">Datos de contacto: </label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" style="width: 200px; height: 24px;" required>
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" style="width: 200px; height: 24px;" required>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width: 200px; height: 24px;" required>
+            <br>
+        </fieldset>
+        <br>
+            <input type="submit" value="Finalizar Reserva" id="finalizarReserva" style="width: 200px; height: 45px;">
+            <input type="reset" value="Reiniciar" id="finalizarReserva" style="width: 200px; height: 45px;">
     </form>
+
+    <footer>
+        <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
+        <nav>
+            <ul>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./avisoLegal.html">Aviso Legal</a></li>
+                <li><a href="./rss.html">RSS</a></li>
+                <li><a href="./politicaPrivacidad.html">Politica Privacidad</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
