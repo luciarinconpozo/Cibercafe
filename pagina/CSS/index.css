@@ -5,6 +5,7 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 10px; /* Espacio entre las celdas de la tabla */
+  margin-bottom: 100px;
 }
 
 th, td {
@@ -27,14 +28,36 @@ th[colspan="7"] {
   font-weight: bold;
 }
 
-/* Estilos para las imágenes del carrusel */
-.carrusel img {
-  max-width: 200px; /* Tamaño máximo de las imágenes */
-  height: auto;
-  margin-right: 10px;
-  filter: grayscale(50%); /* Aplicar un tono gris a las imágenes */
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.carrusel img:hover {
-  filter: grayscale(0%); /* Eliminar el efecto de gris al pasar el ratón sobre las imágenes */
+.carrusel img {
+  width: 100%;
+  display: block; /* Cambiado de 'none' a 'block' */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.boton-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.boton-izquierda {
+  left: 10px;
+}
+
+.boton-derecha {
+  right: 10px;
 }
