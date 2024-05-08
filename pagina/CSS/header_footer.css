@@ -137,6 +137,16 @@ footer nav ul li a:hover{
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
 
-footer img{
-  fill: white;
+footer img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer .imagenes{
+  text-align: center;
+  display: block;
+  
 }

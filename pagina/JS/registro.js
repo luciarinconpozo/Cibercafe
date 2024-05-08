@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-const divs = this.document.querySelectorAll(".form_div")
+const divs = this.document.querySelectorAll(".form_div");
 const inputbox = document.querySelectorAll(".form_input");
 const inputcaptcha = document.querySelector(".captcha_form input");
 
@@ -18,7 +18,7 @@ inputcaptcha.addEventListener("keyup", function(){
         login.classList.add("active");
     }
     else {
-        login.classList.remove("active")
+        login.classList.remove("active");
     }
 });
 
