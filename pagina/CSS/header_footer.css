@@ -83,7 +83,7 @@ header nav ul li a{
   text-decoration-line: none;
 }
 
-/*Cesar*/
+
 header #user_icon{
   height: 35px;
   width: 35px;
@@ -101,7 +101,6 @@ header #carrito_icon{
   right: 40px;
   margin: 10px;
 }
-/*Cesar*/
 
 
 
@@ -128,6 +127,8 @@ footer nav ul li {
   margin-right: 20px; 
   text-align: center;
 }
+
+
 footer nav ul li a {
   color: white;
   text-decoration-line: none;
