@@ -8,13 +8,14 @@
 
     <link rel="stylesheet" href="../../CSS/registro.css">
     <link rel="stylesheet" href="../../CSS/header_footer.css">
-
+    <script src="../../JS/registro.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <img src="../../IMAGENES/icon.png" alt="Foto de Sherk tomando cerveza con Doraemon">
@@ -41,7 +42,7 @@
 
 
     <div class="signin_form">
-        <form action="#" method="post" target="_self" class="form">
+        <form action="../index.html" method="post" target="_self" class="form">
 
             <h1 class="form_title">Registro</h1>
 
@@ -52,18 +53,16 @@
             <div class="form_div">
                 <input name="primerApellido" type="text" placeholder=" " required class="form_input">
                 <label class="form_label" for="primerApellido">Primer apellido: </label>
-
             </div>
 
             <div class="form_div">
                 <input name="segundoApellido" type="text" placeholder=" " required class="form_input">
                 <label class="form_label" for="segundoApellido">Segundo apellido: </label>
-
             </div>
 
             <div class="form_div">
-                <input name="fechadenacimiento" type="date" required class="form_input" placeholder=" ">
-                <label class="form_label" for="fechadenacimiento">Fecha de nacimiento: </label>
+                <input name="fechadenacimiento" type="date" required class="form_input" value=" ">
+                <label class="form_label activelabel" for="fechadenacimiento">Fecha de nacimiento: </label>
             </div>
 
             <div class="form_div">
@@ -84,16 +83,16 @@
                     <input type="text" id="captcha_form" class="form_input_captcha" placeholder=" ">
                     <label for="captcha" class="form_label_captcha">Enter Captcha</label>
 
-                    <button class="captcha_refresh">
+                    <button type="button" class="captcha_refresh">
                         <i class="fa fa-refresh"></i>
                     </button>
-
                 </div>
-
 
             </div>
 
             <input type="submit" class="form_button" value="Enviar">
+            <input type="reset" class="botonReset" value="Reset">
+
         </form>
     </div>
 
@@ -102,16 +101,12 @@
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
         <nav>
             <ul>
-                <li><a href="./pestanyas/avisoLegal.html">Aviso Legal</a></li>
-                <li><a href="./pestanyas/contacto.html">Contacto</a></li>
-                <li><a href="./pestanyas/crm_erp.html">CRM y ERP</a></li>
-                <li><a href="./pestanyas/politicaCookies.html">Política de Cookies</a></li>
-                <li><a href="./pestanyas/politicaPrivacidad.html">Política Privacidad</a></li>
-                <li><a href="./pestanyas/rss.html">RSS</a></li>
-                <li><a href="./pestanyas/crm.html">CRM</a></li>
-                <li><a href="./pestanyas/politicaPrivacidad.html">Politica Privacidad</a></li>
-                <li><a href="./pestanyas/politicaCookies.html">Politica Cookies</a></li>
-
+                <li><a href="./avisoLegal.html">Aviso Legal</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./crm_erp.html">CRM y ERP</a></li>
+                <li><a href="./politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="./politicaPrivacidad.html">Política Privacidad</a></li>
+                <li><a href="./rss.html">RSS</a></li>
             </ul>
         </nav>
     </footer>

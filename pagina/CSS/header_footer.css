@@ -136,3 +136,7 @@ footer nav ul li a {
 footer nav ul li a:hover{
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
+
+footer img{
+  fill: white;
+}

@@ -20,11 +20,11 @@ body{
 
 .form{
     margin: 30px;
-    width: 368px;
+    width: 650px;
     padding: 32px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(255, 255, 255);
-
+    border: 1px solid rgb(0, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
 }
 
 .form_title{
@@ -47,7 +47,7 @@ body{
     width: 100%;
     height: 100%;
     font-size: 16px;
-    border: 1.6 solid rgb(255, 0, 77);
+    border: 1.6 solid rgb(0, 255, 0);
     border-radius: 8px;
     outline: none;
     padding: 16px;
@@ -65,6 +65,21 @@ body{
     transition: .4s; /* buscar como se usa */
 }
 
+.botonReset {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 255, 0) ;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 10px;
+}
 
 .form_button{
     width: 100%;
@@ -73,7 +88,7 @@ body{
     padding: 16px 32px;
     outline: none;
     border: none;
-    background-color:  rgb(255, 0, 77) ;
+    background-color: rgb(0, 255, 0) ;
     color: white;
     font-size: 16px;
     border-radius: 8px;
@@ -84,7 +99,7 @@ body{
     pointer-events: none;
 }
 
-.form_input.active{
+.form input.active{
     opacity: 1;
     pointer-events: auto;
 }
@@ -94,7 +109,7 @@ body{
     box-shadow: 0 5px 5px white;
 }
 
-.form_input:focus + .form_label{
+.form_label.activelabel{
     top: -8px;
     left: 12.8px;
     color: white;
@@ -115,6 +130,7 @@ body{
 }
 
 .form_input:focus{
+    color: white;
     border: 1.6px solid rgb( 0 , 255 , 255 );
 }
 
@@ -215,7 +231,6 @@ body{
 
 .form_input_captcha:focus{
     border: 1.6px solid rgb( 0 , 255 , 255 );
-
 }
 
 
