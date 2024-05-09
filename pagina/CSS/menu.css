@@ -232,10 +232,3 @@ h2 {
 
 }
 
-body {
-  background-image: url('./../IMAGENES/fondo-pared-ladrillo-textura-negra.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta local de tu imagen */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-}
-
-
