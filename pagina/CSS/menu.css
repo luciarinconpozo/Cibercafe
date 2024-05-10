@@ -217,8 +217,9 @@ h1 {
 
 /* Estilo de los encabezados h2 */
 h2 {
-  color: #00ff40; /* Color cyan */
-  text-shadow: 0 0 10px rgba(60, 255, 0, 0.863); /* Sombra neon */
+
+  color: rgb(255, 0, 77); /* Color cyan */
+  text-shadow: 0 0 10px rgba(255, 0, 77, 0.863); /* Sombra neon */
   font-size: 28px; /* Tamaño de fuente */
   border-radius: 100px; /* Bordes redondeados */
   text-align: center; /* Centrado */
@@ -230,12 +231,6 @@ h2 {
   font-size: 28px; /* Tamaño de fuente */
   border-radius: 100px; /* Bordes redondeados */
 
-}
-
-body {
-  background-image: url('./../IMAGENES/fondo-pared-ladrillo-textura-negra.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la URL o la ruta local de tu imagen */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 

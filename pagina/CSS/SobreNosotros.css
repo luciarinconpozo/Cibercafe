@@ -85,11 +85,13 @@ details summary::marker {
 main{
     display:block
 }
+
 body{
   margin: 0;
   margin-bottom: 40px;
     background-color: rgb(85, 85, 85);
 }
+
 a{
     color: white;
     text-decoration: none;
@@ -106,13 +108,13 @@ button:hover{
 html{
   min-height: 100%;
   position: relative;
-    background-color: rgb(85, 85, 85);
     color: white;
 }
 .extraAbel img{
   width: 13px;
   height: 13px;
 }
+
 footer {
   position: absolute;
   bottom: 0;
