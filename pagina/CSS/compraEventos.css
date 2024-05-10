@@ -1,0 +1,28 @@
+form{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#tituloDireccion {
+  text-align: left; 
+  display: block;
+  margin-left: 32.5%;
+}
+
+#datosDireccion {
+  display: inline-block;
+}
+
+#Direccion{
+  border-radius: 10px;
+}
+
+#finalizarCompra{
+  border-radius: 10px;
+  background-color: rgb(12, 115, 184);
+  color: white;
+}
+
+#finalizarCompra:hover{
+  background-color: rgb(4, 44, 71);
+}
