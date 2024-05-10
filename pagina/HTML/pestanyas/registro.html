@@ -59,8 +59,17 @@
                 <label class="form_label" for="segundoApellido">Segundo apellido: </label>
             </div>
 
+
+            <!-- prueba -->
             <div class="form_div">
-                <input name="fechadenacimiento" type="date" required class="form_input" value=" ">
+                <input name="fechadenacimiento" type="text" class="form_input" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                <label class="form_label" for="fechadenacimiento">Fecha de nacimiento: </label>
+
+            </div>
+
+            <div class="form_div">
+
+                <input name="fechadenacimiento" type="date" id="myDateInput" required class="form_input">
                 <label class="form_label activelabel" for="fechadenacimiento">Fecha de nacimiento: </label>
             </div>
 
@@ -91,6 +100,8 @@
 
             <input type="submit" class="form_button" value="Enviar">
             <input type="reset" class="botonReset" value="Reset">
+
+
 
         </form>
     </div>
