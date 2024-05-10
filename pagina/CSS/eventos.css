@@ -7,18 +7,17 @@ h1 {
 
 .informacion{
   color: #fff;
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  margin-top: 20px; /* Aumento del espacio entre cada comida */
-  margin-bottom: 20px; /* Aumento del espacio entre cada comida */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
-  display: inline;
+}
+
+.eventos {
+  width: 100%; /* Ocupa todo el ancho de la página */
 }
 
 .firma, .charla_streamer, .conciertos, .peliculas {
-  margin-bottom: 40px; /* Aumento del espacio entre secciones */
-  display:inline;
+  background-color: black; /* Color de fondo negro */
+  width: 100%; /* Ocupa todo el ancho de la página */
+  padding: 20px; /* Espaciado interno para separarse de otros elementos */
+  margin-top: 20px; /* Espacio en la parte superior para separarse del elemento anterior */
 }
 
 .firma, .charla_streamer, .conciertos, .peliculas {
