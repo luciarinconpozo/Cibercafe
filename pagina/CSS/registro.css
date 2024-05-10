@@ -189,6 +189,8 @@ body{
     transition: .4s;
 }
 
+
+
 .captcha_refresh:hover{
     transition: .4s;
     transform: scale(0.90);

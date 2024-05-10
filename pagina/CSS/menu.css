@@ -217,6 +217,7 @@ h1 {
 
 /* Estilo de los encabezados h2 */
 h2 {
+
   color: rgb(255, 0, 77); /* Color cyan */
   text-shadow: 0 0 10px rgba(255, 0, 77, 0.863); /* Sombra neon */
   font-size: 28px; /* Tamaño de fuente */
@@ -231,4 +232,5 @@ h2 {
   border-radius: 100px; /* Bordes redondeados */
 
 }
+
 
