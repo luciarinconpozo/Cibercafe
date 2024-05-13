@@ -23,3 +23,20 @@ input{
     border-radius: 10px;
 }
 
+#divFecha{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#divHora{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#divCantidad{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#divDatos{
+  margin-top: 30px;
+  margin-bottom: 30px;
