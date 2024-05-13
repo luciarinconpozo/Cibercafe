@@ -1,15 +1,90 @@
 form{
   margin-top: 40px;
+  color: white;
+}
+
+#tituloDireccion{
+  color: rgb(0, 255, 255);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
 }
 
 #datosDireccion {
   display: inline-block;
+  border-color: rgb(0, 255, 255);;
+  box-shadow: 5px 5px 5px rgb(0, 255, 255);
+  border-width: 5px;
+}
+
+#divDireccion{
+  text-align: center;
+  margin-top: 10px;
+}
+
+#Direccion{
+  border-radius: 10px;
+}
+
+#datosBancarios{
+  margin-top: 60px;
+  text-align: center;
+  color: rgb(0, 255, 255);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+#nombreTitular{
+  text-align: center;
+  margin-top: 3px;
+}
+
+#numeroTarjeta{
+  text-align: center;
+  margin-top: 3px;
+}
+
+#fechaCaducidad{
+  text-align: center;
+  margin-top: 3px;
+}
+
+#CVV{
+  text-align: center;
+  margin-top: 3px;
+}
+
+input{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#datosCliente{
+  margin-top: 60px;
+  text-align: center;
+  color: rgb(0, 255, 255);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+#DNI{
+  text-align: center;
+  margin-top: 3px;
+}
+
+#nombreApellidos{
+  text-align: center;
+  margin-top: 3px;
+}
+
+#correo{
+  text-align: center;
+  margin-top: 3px;
 }
 
 #finalizarCompra{
   border-radius: 10px;
-  background-color: rgb(12, 115, 184);
-  color: white;
+  background-color: rgb(255, 0, 77);
+  color: rgb(0, 0, 0);
 }
 
 #divFinalizarCompra{
@@ -18,50 +93,6 @@ form{
 }
 
 #finalizarCompra:hover{
-  background-color: rgb(4, 44, 71);
-}
-
-#divDireccion{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#tituloDireccion{
-  margin-left: 22%;
-}
-
-#divDatosBancarios{
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
-#datosBancarios{
-  margin-top: 60px;
-  text-align: center;
-}
-
-#cajaDatosBancarios{
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-#Direccion{
-  border-radius: 10px;
-}
-
-#divDatosCliente{
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
-#datosCliente{
-  margin-top: 60px;
-  text-align: center;
-}
-
-#cajaDatosCliente{
-  margin-top: 10px;
-  border-radius: 10px;
+  background-color: rgb(0, 255, 255);
+  color: rgb(0, 0, 0);
 }
