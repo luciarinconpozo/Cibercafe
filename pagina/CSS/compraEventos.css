@@ -1,0 +1,67 @@
+form{
+  margin-top: 40px;
+}
+
+#datosDireccion {
+  display: inline-block;
+}
+
+#finalizarCompra{
+  border-radius: 10px;
+  background-color: rgb(12, 115, 184);
+  color: white;
+}
+
+#divFinalizarCompra{
+  margin-top: 60px;
+  text-align: center;
+}
+
+#finalizarCompra:hover{
+  background-color: rgb(4, 44, 71);
+}
+
+#divDireccion{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#tituloDireccion{
+  margin-left: 22%;
+}
+
+#divDatosBancarios{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#datosBancarios{
+  margin-top: 60px;
+  text-align: center;
+}
+
+#cajaDatosBancarios{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#Direccion{
+  border-radius: 10px;
+}
+
+#divDatosCliente{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#datosCliente{
+  margin-top: 60px;
+  text-align: center;
+}
+
+#cajaDatosCliente{
+  margin-top: 10px;
+  border-radius: 10px;
+}

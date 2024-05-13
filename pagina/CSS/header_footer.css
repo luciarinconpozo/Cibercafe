@@ -6,7 +6,7 @@
 
 
 body{
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(15, 15, 15);
   margin: 0;
   padding: 0;
   font-family: "Orbitron", sans-serif;
@@ -39,8 +39,8 @@ header{
 .logo h1 {
   flex-grow: 1;
   text-align: center;
-  color: rgb(0, 255, 0);
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Sombreado verde con mayor intensidad */
+  color: rgb( 0 , 255 , 255 );
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Sombreado verde con mayor intensidad */
   font-size: 50px;
   margin: 0; 
   margin-right: 80px;
@@ -48,14 +48,14 @@ header{
 
 
 header nav {
-  margin-bottom: 0px;
-  box-shadow:0 0 10px rgba(255, 255, 255, 0.8); 
+  margin-bottom: 10px;
+  box-shadow:0 0 10px rgba(148, 194, 211, 0.8); 
   flex-grow: 1;
   text-align: center;
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(148, 194, 211);
   display: inline-block; 
   padding: 10px; 
-  border-radius: 20px 20px 0 0;
+  border-radius: 8px;
 }
 
 header nav ul {
@@ -83,7 +83,7 @@ header nav ul li a{
   text-decoration-line: none;
 }
 
-
+/*Cesar*/
 header #user_icon{
   height: 35px;
   width: 35px;
@@ -101,6 +101,7 @@ header #carrito_icon{
   right: 40px;
   margin: 10px;
 }
+/*Cesar*/
 
 
 
@@ -127,8 +128,6 @@ footer nav ul li {
   margin-right: 20px; 
   text-align: center;
 }
-
-
 footer nav ul li a {
   color: white;
   text-decoration-line: none;
@@ -136,4 +135,18 @@ footer nav ul li a {
 
 footer nav ul li a:hover{
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer .imagenes{
+  text-align: center;
+  display: block;
+  
 }
