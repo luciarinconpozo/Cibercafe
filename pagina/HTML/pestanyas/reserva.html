@@ -31,28 +31,39 @@
 
     <form>
         <fieldset>
-            <div id="divfecha">
+            <div id="divFecha">
                 <label for="fecha" style="font-size: 22px;">Selecciona un dia: </label>
-                <br>
-                <input type="date" id="fecha" name="fecha" style="width: 220px; height: 50px;">
+            </div>
+            <div id="fecha">
+                <input type="date" name="fecha" style="width: 220px; height: 50px;">
             </div>
             <div id="divHora">
                 <label for="hora" style="font-size: 22px;">Selecciona una hora: </label>
-                <br>
-                <input type="time" id="hora" name="hora" style="width: 160px; height: 30px;">
+            </div>
+            <div id="hora">
+                <input type="time" name="hora" style="width: 160px; height: 30px;">
             </div>
             <div id="divCantidad">
                 <label for="cantidad" style="font-size: 22px;">Numero de asistentes: </label>
-                <br>
-                <input type="number" id="cantidad" name="cantidad" min="0" max="50" step="1" style="width: 160px; height: 30px;">
             </div>
+            <div id="cantidad">
+                <input type="number" name="cantidad" min="0" max="50" step="1" style="width: 160px; height: 30px;">
+            </div>
+
+
+
+
+
             <div id="divDatos">
                 <label for="nombre" style="font-size: 22px;">Datos de contacto: </label>
-                <br>
+            </div>
+            <div>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre de reserva" style="width: 200px; height: 24px;" required>
-                <br>
+            </div>
+            <div>
                 <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" style="width: 200px; height: 24px;" required>
-                <br>
+            </div>
+            <div>
                 <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width: 200px; height: 24px;" required>
             </div>
         </fieldset>
