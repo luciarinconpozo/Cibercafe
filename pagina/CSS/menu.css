@@ -200,6 +200,11 @@ h2 {
   border-radius: 100px; 
 
 }
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /* Estilos para el modal */
 .modal {
@@ -241,3 +246,6 @@ h2 {
   cursor: pointer; 
 }
 
+ul li{
+  color: white;
+}
