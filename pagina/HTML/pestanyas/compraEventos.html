@@ -37,37 +37,45 @@
     </header>
 
     <form>
-        <label id="tituloDireccion" for="hora" style="font-size: 25px;">Ingrese su dirección: </label>
+        <div id="tituloDireccion">
+            <label for="hora" style="font-size: 25px;">Ingrese su dirección: </label>
+        </div>
         <div id="divDireccion">
-            <br>
             <fieldset id="datosDireccion">
-                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" style= "height: 20px;" required>
-                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad" style= "height: 20px;" required>
-                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal" style= "height: 20px;" required>
+                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" style= "height: 20px;">
+                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad" style= "height: 20px;">
+                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal" style= "height: 20px;">
             </fieldset>
         </div>
         <div id="datosBancarios">
-            <label for="hora" id="datosBancarios" style="font-size: 25px;">Datos bancarios: </label>
+            <label for="hora" style="font-size: 25px;">Datos bancarios: </label>
         </div>
-        <div id="divDatosBancarios">
-            <input type="text" id="cajaDatosBancarios" name="NombreDelTitular" placeholder="Nombre del Titular" style="width: 250px; height: 30px;" required>
-            <br>
-            <input type="number" id="cajaDatosBancarios" name="NumeroTarjeta" placeholder="Numero Tarjeta" style="width: 250px; height: 30px;" required>
-            <br>
-            <input type="date" id="cajaDatosBancarios" name="FechaCaducidad" placeholder="Fecha Caducidad" style="width: 250px; height: 30px;" required>
-            <br>
-            <input type="number" id="cajaDatosBancarios" name="CVV" placeholder="CVV" style="width: 250px; height: 30px;" required>
+        <div id="nombreTitular">
+            <input type="text" name="NombreDelTitular" placeholder="Nombre del Titular" style="width: 250px; height: 30px;">
         </div>
+        <div id="numeroTarjeta">
+            <input type="number" name="NumeroTarjeta" placeholder="Numero Tarjeta" style="width: 250px; height: 30px;">
+        </div>
+        <div id="fechaCaducidad">
+            <input type="date" name="FechaCaducidad" placeholder="Fecha Caducidad" style="width: 250px; height: 30px;">
+        </div>
+        <div id="CVV">
+            <input type="number" name="CVV" placeholder="CVV" style="width: 250px; height: 30px;">
+        </div>
+
         <div id="datosCliente">
             <label for="hora" style="font-size: 25px;">Datos del cliente: </label>
         </div>
-        <div id="divDatosCliente">
-            <input type="text" id="cajaDatosCliente" name="DNI" placeholder="DNI" style="width: 250px; height: 30px;" required>
-            <br>
-            <input type="text" id="cajaDatosCliente" name="NombreApellidos" placeholder="Nombre y Apellidos" style="width: 250px; height: 30px;" required>
-            <br>
-            <input type="email" id="cajaDatosCliente" name="Correo" placeholder="Correo" style="width: 250px; height: 30px;" required>
+        <div id="DNI">
+            <input type="text" name="DNI" placeholder="DNI" style="width: 250px; height: 30px;">
         </div>
+        <div id="nombreApellidos">
+            <input type="text" name="NombreApellidos" placeholder="Nombre y Apellidos" style="width: 250px; height: 30px;">
+        </div>
+        <div id="correo">
+            <input type="email" name="Correo" placeholder="Correo" style="width: 250px; height: 30px;">
+        </div>
+
         <div id="divFinalizarCompra">
             <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra" style="width: 200px; height: 45px;">
         </div>
