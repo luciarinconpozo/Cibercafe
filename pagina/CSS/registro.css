@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+
+body{
+    font-size: 16px;
+}
+
+.signin_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.form{
+    margin: 30px;
+    width: 650px;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgb( 0 , 255 , 255 );
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
+}
+
+.form_title{
+    color: white;
+    font-weight: 300px;
+    margin-bottom: 20.8px;
+    text-align: center;
+}
+
+.form_div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 25.6px;
+}
+
+.form_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: 1.6 solid rgb( 0 , 255 , 255 );
+    border-radius: 8px;
+    outline: none;
+    padding: 16px;
+    z-index: 1;
+    background: none;
+    color: white;
+}
+
+.form_label{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    padding: 0  4px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: .4s; 
+}
+
+.botonReset {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    background-color: rgb( 0 , 255 , 255 ) ;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 10px;
+}
+
+.form_button{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    background-color: rgb( 0 , 255 , 255 ) ;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 100px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.form input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form_button:hover{
+    transform: scale(0.90);
+    box-shadow: 0 5px 5px white;
+}
+
+.botonReset:hover{
+    transform: scale(0.90);
+    box-shadow: 0 5px 5px white;
+}
+
+.form_label.activelabel{
+    top: -14px;
+    left: 12.8px;
+    color: white;
+    font-size: 12.8px;
+    font-weight: 600;
+    z-index: 5;
+}
+
+
+
+.form_input:not(::placeholder-shown).form_input:not(:focus) + .form_label{
+    top: -8px;
+    left: 12.8px;
+    color: white;
+    font-size: 12.8px; 
+    font-weight: 600;
+    z-index: 5;
+}
+
+.form_input:focus{
+    color: white;
+    border: 1.6px solid rgb( 0 , 255 , 255 );
+}
+
+.signin_form #captcha .preview{
+    color: white;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed white;
+    border-radius: 8px;
+    margin-bottom: 25.6px;
+}
+
+
+.signin_form #captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}
+
+.signin_form #captcha .captcha_form{
+    display: flex;
+}
+
+.signin_form #captcha .captcha_form input{ 
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    padding: 16px;
+    z-index: 1;
+    background: none;
+
+}
+
+/* .signin_form #captcha .captcha_form .captcha_refresh{
+} */
+
+
+
+.captcha_refresh{
+    width: 40px;
+    border: none;
+    outline: none;
+    background: blue;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 5px;
+    transition: .4s;
+}
+
+
+
+.captcha_refresh:hover{
+    transition: .4s;
+    transform: scale(0.90);
+}
+
+
+.captcha_refresh:hover{
+    transition: .4s;
+    transform: scale(0.90);
+}
+
+.form_input_captcha{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: 1.6 solid rgb( 0 , 255 , 255 );
+    border-radius: 8px;
+    outline: none;
+    padding: 16px;
+    z-index: 1;
+    background: none;
+}
+
+.form_label_captcha .form_label.activelabel{
+    position: absolute;
+    left: 16px;
+    top: 83.2px;
+    padding: 0 4px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: .4s;
+}
