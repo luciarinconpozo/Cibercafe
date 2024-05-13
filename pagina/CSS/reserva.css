@@ -1,0 +1,42 @@
+form{
+  color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+fieldset {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+#finalizarReserva{
+  border-radius: 10px;
+  background-color: rgb(12, 115, 184);
+  color: white;
+}
+
+#finalizarReserva:hover{
+  background-color: rgb(4, 44, 71);
+}
+
+input{
+    border-radius: 10px;
+}
+
+#divFecha{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#divHora{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#divCantidad{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#divDatos{
+  margin-top: 30px;
+  margin-bottom: 30px;

@@ -1,3 +1,4 @@
+
 .contenedor {
     max-width: 600px;
     margin: 0 auto;
@@ -25,6 +26,7 @@
     display: block;
     margin-bottom: 5px;
     color: rgb(0, 255, 255); 
+
   }
   
   input[type="text"],
@@ -83,3 +85,4 @@
     font-size: 20px;
     cursor: pointer;
 }
+

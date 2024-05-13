@@ -15,27 +15,28 @@
 </head>
 
 <body>
-
     <header>
         <div class="logo">
+            <img src="../../IMAGENES/icon.png" alt="Experto informático">
             <h1>La Ciénaga Cósmica</h1>
-            <img src="../IMAGENES/icon.png" alt="Experto informático">
         </div>
 
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pestanyas/menu.html">Menú</a></li>
-                <li><a href="../pestanyas/eventos.html">Eventos</a></li>
-                <li><a href="../pestanyas/reserva.html">Reserva</a></li>
-                <li><a href="../pestanyas/sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./reserva.html">Reserva</a></li>
+                <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
             </ul>
         </nav>
+
         <div class="iconos">
-            <a href="./inicioSesion.html"><img id="user_icon" src="../../IMAGENES/user_icon.svg" alt="icono de usuario"></a>   
-            <a href="./carrito.html"><img id="carrito_icon" src="../../IMAGENES/carrito_icon.svg" alt="icono de carrito de compra"></a>
+            <a href="./inicioSesion.html"><img id="user_icon" src="../../IMAGENES/user_icon.svg"
+                    alt="icono de usuario"></a>
+            <a href="./carrito.html"><img id="carrito_icon" src="../../IMAGENES/carrito_icon.svg"
+                    alt="icono de carrito de compra"></a>
         </div>
-        
     </header>
 
 
@@ -58,8 +59,17 @@
                 <label class="form_label" for="segundoApellido">Segundo apellido: </label>
             </div>
 
+
+            <!-- prueba -->
             <div class="form_div">
-                <input name="fechadenacimiento" type="date" required class="form_input" value=" ">
+                <input name="fechadenacimiento" type="text" class="form_input" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                <label class="form_label" for="fechadenacimiento">Fecha de nacimiento: </label>
+
+            </div>
+
+            <div class="form_div">
+
+                <input name="fechadenacimiento" type="date" id="myDateInput" required class="form_input">
                 <label class="form_label activelabel" for="fechadenacimiento">Fecha de nacimiento: </label>
             </div>
 
