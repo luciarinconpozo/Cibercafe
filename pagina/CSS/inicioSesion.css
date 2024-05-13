@@ -12,6 +12,7 @@ body{
 }
 
 .signin_form{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,9 +80,11 @@ body{
     cursor: pointer;
     transition: .4s;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form a{
+
     text-decoration: none;
 }
 
@@ -98,4 +101,9 @@ body{
     font-size: 12.8px;
     font-weight: 600;
     z-index: 5;
+}
+
+.form_linea {
+    margin: 12px;
+    border: 1px solid white;
 }
