@@ -3,13 +3,17 @@ h1 {
   color: white;
   font-size: 40px;
   text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d, 0 0 30px #ff004d, 0 0 40px #ff004d, 0 0 70px #ff004d, 0 0 80px #ff004d, 0 0 100px #ff004d, 0 0 150px #ff004d;
+  text-align: center;
 }
 
 h2 {
   color: #ff004d;
   font-size: 40px;
   text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d, 0 0 30px #ff004d, 0 0 40px #ff004d, 0 0 70px #ff004d, 0 0 80px #ff004d, 0 0 100px #ff004d, 0 0 150px #ff004d;
-  position: relative; /* Ajustado a relative */
+  text-align: center;
+}
+.compra-entrada h2{
+  text-align: left;
 }
 
 .informacion {

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../CSS/carrito.css">
     <link rel="stylesheet" href="../../CSS/header_footer.css">
     <title>Document</title>
@@ -22,32 +25,35 @@
                 <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
             </ul>
         </nav>
+        <div class="iconos">
+            <a href="./inicioSesion.html"> <img id="user_icon" src="../../IMAGENES/user_icon.svg" alt="icono de usuario"></a>
+            <a href="./carrito.html"><img id="carrito_icon" src="../../IMAGENES/carrito_icon.svg" alt="icono de carrito de compra"></a>
+        </div>
     </header>
-
     <main>
         <section class="productos">
             <h2>Productos seleccionados</h2>
             <ul>
-                <li class="producto">
-                    <div id="producto__imagen">
+                <li class="producto" data-producto-id="1">
+                    <div class="producto__carrusel">
                         <img src="producto1.jpg" alt="Producto 1">
                     </div>
-                    <div id="producto__informacion">
+                    <div class="producto__informacion">
                         <h3>Producto 1</h3>
-                        <p>Precio: <span id="producto__precio">100</span>€</p>
-                        <input type="number" min="1" value="1" id="producto__cantidad">
-                        <button id="producto__boton-agregar">Agregar</button>
+                        <p>Precio Total: <span class="producto__precio-total">100</span>€</p>
+                        <input type="number" min="0" value="0" class="producto__cantidad">
+                        <button class="producto__boton-agregar">Agregar</button>
                     </div>
                 </li>
-                <li class="producto">
-                    <div class="producto__imagen">
+                <li class="producto" data-producto-id="2">
+                    <div class="producto__carrusel">
                         <img src="producto2.jpg" alt="Producto 2">
                     </div>
-                    <div id="producto__informacion">
+                    <div class="producto__informacion">
                         <h3>Producto 2</h3>
-                        <p>Precio: <span id="producto__precio">50</span>€</p>
-                        <input type="number" min="1" value="1" id="producto__cantidad">
-                        <button id="producto__boton-agregar">Agregar</button>
+                        <p>Precio Total: <span class="producto__precio-total">50</span>€</p>
+                        <input type="number" min="0" value="0" class="producto__cantidad">
+                        <button class="producto__boton-agregar">Agregar</button>
                     </div>
                 </li>
                 </ul>
@@ -61,6 +67,7 @@
             <button id="resumen__boton-pagar">Pagar</button>
         </section>
     </main>
+    <script src="../../JS/carrito.js"></script>
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
         <nav>
