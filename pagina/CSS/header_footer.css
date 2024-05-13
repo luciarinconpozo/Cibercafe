@@ -39,8 +39,8 @@ header{
 .logo h1 {
   flex-grow: 1;
   text-align: center;
-  color: rgb(0, 255, 0);
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Sombreado verde con mayor intensidad */
+  color: rgb( 0 , 255 , 255 );
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Sombreado verde con mayor intensidad */
   font-size: 50px;
   margin: 0; 
   margin-right: 80px;
@@ -49,10 +49,10 @@ header{
 
 header nav {
   margin-bottom: 10px;
-  box-shadow:0 0 10px rgba(255, 255, 255, 0.8); 
+  box-shadow:0 0 10px rgba(148, 194, 211, 0.8); 
   flex-grow: 1;
   text-align: center;
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(148, 194, 211);
   display: inline-block; 
   padding: 10px; 
   border-radius: 8px;

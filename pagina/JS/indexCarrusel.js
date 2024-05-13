@@ -1,4 +1,3 @@
-
 window.addEventListener("DOMContentLoaded", function() {
     const carrusel = document.querySelector('.carrusel');
     const imagenes = carrusel.querySelectorAll('img');
