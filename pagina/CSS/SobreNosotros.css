@@ -89,7 +89,7 @@ main{
 body{
   margin: 0;
   margin-bottom: 40px;
-    background-color: rgb(85, 85, 85);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 a{
@@ -115,9 +115,3 @@ html{
   height: 13px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-height: 40%;
-}
