@@ -1,4 +1,3 @@
-/* En tu archivo contacto.css */
 
 .contenedor {
     max-width: 600px;
@@ -8,12 +7,13 @@
   }
   
   h1 {
-    color: rgb(0, 255, 255); /* Color para el título */
+    color: rgb(0, 255, 255);
   }
   
   p {
-    font-size: 18px; /* Tamaño de letra para los párrafos */
+    font-size: 18px; 
     margin-bottom: 20px;
+    color: white;
   }
   
   form {
@@ -25,7 +25,8 @@
   label {
     display: block;
     margin-bottom: 5px;
-    color: rgb(0, 255, 255); /* Color para las etiquetas */
+    color: rgb(0, 255, 255); 
+
   }
   
   input[type="text"],
@@ -33,13 +34,13 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid rgb(0, 255, 255); /* Color del borde para los campos de texto */
+    border: 1px solid rgb(0, 255, 255); 
     border-radius: 5px;
     box-sizing: border-box;
   }
   
   input[type="submit"] {
-    background-color: rgb(0, 255, 255); /* Color de fondo para el botón de enviar */
+    background-color: rgb(0, 255, 255);
     color: black;
     padding: 10px 20px;
     border: none;
@@ -48,6 +49,40 @@
   }
   
   input[type="submit"]:hover {
-    background-color: rgb(0, 200, 200); /* Cambio de color al pasar el ratón sobre el botón */
+    background-color: rgb(0, 200, 200);
   }
-  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup-content.success {
+    background-color: black; 
+    color: white;
+    box-shadow: 0px 0px 50px rgb(0, 255, 25);
+}
+
+.popup-content.error {
+    background-color: black; 
+    color: white; 
+    box-shadow: 0px 0px 50px red;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
