@@ -1,77 +1,236 @@
 /* Botones de Menú */
 .botonMenu {
-    background-color: rgb(255, 0, 77);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 18px;
+  background-color: rgb(255, 0, 77);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 .botonMenu:hover {
-    background-color: rgb(0, 255, 255);
-    color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 /* Comida Descripción */
 .comidaDescripcion {
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    margin-top: 20px; /* Aumento del espacio entre cada comida */
-    margin-bottom: 20px; /* Aumento del espacio entre cada comida */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-top: 20px; /* Aumento del espacio entre cada comida */
+  margin-bottom: 20px; /* Aumento del espacio entre cada comida */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  align-items: center; /* Centramos verticalmente */
 }
 
 .comidaDescripcion h2 {
-    color: rgb(0, 255, 0);
-    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Título más destacado */
-    font-size: 28px; /* Aumento del tamaño del título */
-    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  color: rgb(0, 255, 0);
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Título más destacado */
+  font-size: 24px; /* Tamaño uniforme para todos los títulos */
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  text-align: center; /* Centrar el texto */
+  flex: 1; /* Ocupa el espacio disponible */
 }
 
 .comidaDescripcion p {
-    color: rgb(255, 255, 255);
-    margin: 5px 0;
+  color: rgb(255, 255, 255);
+  font-size: 16px; /* Tamaño uniforme para todos los párrafos */
+  margin: 5px; /* Ajustamos el margen */
+  flex: 2; /* Ocupa más espacio */
 }
 
-.comidaPrecio {
-    color: rgb(0, 255, 255);
-    font-weight: bold;
+.comidaDescripcion .comidaPrecio {
+  color: rgb(0, 255, 255);
+  font-weight: bold;
+  font-size: 18px; /* Tamaño uniforme para el precio */
+  text-align: right; /* Alineación del precio a la derecha */
+  flex: 1; /* Ocupa el espacio disponible */
 }
 
 /* Imágenes de Comida */
 .comidaImagen {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  width: 200px;
+  height: auto; /* Mantenemos la proporción */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
 }
 
 /* Espacio entre secciones */
 .entrantes, .principales, .postres, .bebidas {
-    margin-bottom: 40px; /* Aumento del espacio entre secciones */
+  margin-bottom: 40px; /* Aumento del espacio entre secciones */
 }
 
 /* Títulos h1 */
 h1 {
-    color: rgb(0, 255, 255);
-    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra más destacada */
-    font-size: 36px; /* Aumento del tamaño del título */
-    margin-bottom: 20px; /* Espacio entre títulos */
-    text-align: center; /* Centrar el texto */
+  color: rgb(0, 255, 255);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra más destacada */
+  font-size: 36px; /* Aumento del tamaño del título */
+  margin-bottom: 20px; /* Espacio entre títulos */
+  text-align: center; /* Centrar el texto */
 }
 
-/* Elementos li específicos */
-.principales li:nth-child(1) {
-    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+/* Clearfix para corregir el float */
+.comidaDescripcion::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.principales li:nth-child(2) {
-    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+
+/* Comida Descripción */
+.comidaDescripcion {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 20px; /* Aumento del espacio entre cada comida */
+  margin-bottom: 20px; /* Aumento del espacio entre cada comida */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
 }
-.principales li:nth-child(3) {
-    color: rgb(255, 255, 255); /* Color blanco para el segundo elemento li dentro de la lista de platos principales */
+
+.comidaDescripcion h2 {
+  color: rgb(0, 255, 0);
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Título más destacado */
+  font-size: 28px; /* Aumento del tamaño del título */
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
 }
+
+.comidaDescripcion p {
+  color: rgb(255, 255, 255);
+  margin: 10px 0; /* Aumento del espacio entre los párrafos */
+}
+
+.comidaPrecio {
+  color: rgb(0, 255, 255);
+  font-weight: bold;
+  text-align: right; /* Alineación del precio a la derecha */
+  margin-top: 10px; /* Espacio entre el precio y el último párrafo */
+}
+
+/* Imágenes de Comida */
+.comidaImagen {
+  display: block;
+  float: left; /* Imagen a la izquierda */
+  margin-right: 20px; /* Separación entre imagen y texto */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+/* Espacio entre secciones */
+.entrantes, .principales, .postres, .bebidas {
+  margin-bottom: 40px; /* Aumento del espacio entre secciones */
+}
+
+
+/* Enlaces de anclaje */
+.anclaMenu {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.anclaMenu a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #3daeff; /* Color azul neon bonito */
+  box-shadow: 0 0 10px rgba(60, 248, 255, 0.8); /* Sombra neon */
+
+  font-size: large;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.anclaMenu a:hover {
+  background-color: #89ceff; /* Cambio de color al pasar el cursor */
+}
+
+
+/* Eslogan */
+.eslogan {
+  text-align: center;
+  margin-top: 50px; /* Aumento del espacio entre el encabezado y el eslogan */
+  margin-bottom: 50px; /* Aumento del espacio entre el eslogan y el contenido */
+  font-size: 100px; /* Tamaño del texto */
+  color: #000000; /* Color del texto */
+  font-weight: bold; /* Negrita */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+/* Estilo de los encabezados h1 */
+.entrantes h1 {
+  color: #00FFFF; /* Color cyan */
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra neon */
+  font-size: 36px; /* Tamaño de fuente */
+  margin-top: 100px; /* Espacio inferior */
+  margin-bottom: 30px; /* Espacio inferior */
+  text-align: center; /* Centrado */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid #FFF; /* Borde blanco */
+  border-radius: 100px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra neon */
+  background-color: #000; /* Color de fondo negro */
+}
+.principales h1 {
+  color: #00FFFF; /* Color cyan */
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra neon */
+  font-size: 36px; /* Tamaño de fuente */
+  margin-top: 100px; /* Espacio inferior */
+  margin-bottom: 30px; /* Espacio inferior */
+  text-align: center; /* Centrado */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid #FFF; /* Borde blanco */
+  border-radius: 100px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra neon */
+  background-color: #000; /* Color de fondo negro */
+}
+.postres h1 {
+  color: #00FFFF; /* Color cyan */
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra neon */
+  font-size: 36px; /* Tamaño de fuente */
+  margin-top: 100px; /* Espacio inferior */
+  margin-bottom: 30px; /* Espacio inferior */
+  text-align: center; /* Centrado */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid #FFF; /* Borde blanco */
+  border-radius: 100px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra neon */
+  background-color: #000; /* Color de fondo negro */
+}
+.bebidas h1 {
+  color: #00FFFF; /* Color cyan */
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Sombra neon */
+  font-size: 36px; /* Tamaño de fuente */
+  margin-top: 100px; /* Espacio inferior */
+  margin-bottom: 30px; /* Espacio inferior */
+  text-align: center; /* Centrado */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid #FFF; /* Borde blanco */
+  border-radius: 100px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra neon */
+  background-color: #000; /* Color de fondo negro */
+}
+
+
+/* Estilo de los encabezados h2 */
+h2 {
+
+  color: rgb(255, 0, 77); /* Color cyan */
+  text-shadow: 0 0 10px rgba(255, 0, 77, 0.863); /* Sombra neon */
+  font-size: 28px; /* Tamaño de fuente */
+  border-radius: 100px; /* Bordes redondeados */
+  text-align: center; /* Centrado */
+}
+
+.eslogan h2{
+  color: #cc00ff; /* Color cyan */
+  text-shadow: 0 0 10px rgba(215, 55, 247, 0.863); /* Sombra neon */
+  font-size: 28px; /* Tamaño de fuente */
+  border-radius: 100px; /* Bordes redondeados */
+
+}
+
 

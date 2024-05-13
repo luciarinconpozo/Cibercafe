@@ -20,11 +20,11 @@ body{
 
 .form{
     margin: 30px;
-    width: 368px;
+    width: 650px;
     padding: 32px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(255, 255, 255);
-
+    border: 1px solid rgb( 0 , 255 , 255 );
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
 .form_title{
@@ -47,12 +47,13 @@ body{
     width: 100%;
     height: 100%;
     font-size: 16px;
-    border: 1.6 solid rgb(255, 0, 77);
+    border: 1.6 solid rgb( 0 , 255 , 255 );
     border-radius: 8px;
     outline: none;
     padding: 16px;
     z-index: 1;
     background: none;
+    color: white;
 }
 
 .form_label{
@@ -62,9 +63,24 @@ body{
     padding: 0  4px;
     color: rgb(255, 255, 255);
     font-size: 16px;
-    transition: .4s; /* buscar como se usa */
+    transition: .4s; 
 }
 
+.botonReset {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    background-color: rgb( 0 , 255 , 255 ) ;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 10px;
+}
 
 .form_button{
     width: 100%;
@@ -73,8 +89,8 @@ body{
     padding: 16px 32px;
     outline: none;
     border: none;
-    background-color:  rgb(255, 0, 77) ;
-    color: white;
+    background-color: rgb( 0 , 255 , 255 ) ;
+    color: black;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -84,7 +100,7 @@ body{
     pointer-events: none;
 }
 
-.form_input.active{
+.form input.active{
     opacity: 1;
     pointer-events: auto;
 }
@@ -94,8 +110,13 @@ body{
     box-shadow: 0 5px 5px white;
 }
 
-.form_input:focus + .form_label{
-    top: -8px;
+.botonReset:hover{
+    transform: scale(0.90);
+    box-shadow: 0 5px 5px white;
+}
+
+.form_label.activelabel{
+    top: -14px;
     left: 12.8px;
     color: white;
     font-size: 12.8px;
@@ -115,6 +136,7 @@ body{
 }
 
 .form_input:focus{
+    color: white;
     border: 1.6px solid rgb( 0 , 255 , 255 );
 }
 
@@ -125,7 +147,7 @@ body{
     text-align: center;
     line-height: 40px;
     letter-spacing: 8px;
-    border: 1px dashed black;
+    border: 1px dashed white;
     border-radius: 8px;
     margin-bottom: 25.6px;
 }
@@ -140,7 +162,7 @@ body{
     display: flex;
 }
 
-.signin_form #captcha .captcha_form input{
+.signin_form #captcha .captcha_form input{ 
     width: 100%;
     font-size: 16px;
     border-radius: 8px;
@@ -148,28 +170,37 @@ body{
     padding: 16px;
     z-index: 1;
     background: none;
+
 }
 
 /* .signin_form #captcha .captcha_form .captcha_refresh{
 } */
 
+
+
 .captcha_refresh{
     width: 40px;
     border: none;
     outline: none;
-    background: #888;
-    color: #eee;
+    background: blue;
     cursor: pointer;
     border-radius: 8px;
     margin-left: 5px;
     transition: .4s;
 }
 
+
+
 .captcha_refresh:hover{
     transition: .4s;
     transform: scale(0.90);
 }
 
+
+.captcha_refresh:hover{
+    transition: .4s;
+    transform: scale(0.90);
+}
 
 .form_input_captcha{
     position: relative;
@@ -178,7 +209,7 @@ body{
     width: 100%;
     height: 100%;
     font-size: 16px;
-    border: 1.6 solid rgb(255, 0, 77);
+    border: 1.6 solid rgb( 0 , 255 , 255 );
     border-radius: 8px;
     outline: none;
     padding: 16px;
@@ -186,7 +217,7 @@ body{
     background: none;
 }
 
-.form_label_captcha{
+.form_label_captcha .form_label.activelabel{
     position: absolute;
     left: 16px;
     top: 83.2px;
@@ -195,29 +226,3 @@ body{
     font-size: 16px;
     transition: .4s;
 }
-
-.form_input_captcha:focus + .form_label_captcha{
-    top: 75.2px;
-    left: -12.8px;
-    color: rgb( 0 , 255 , 255 );
-    font-size: 12.8px;
-    font-weight: 600;
-    z-index: 5;
-}
-
-.form_input_captcha:not(:placeholder-shown).form_input_captcha:not(:focus) + .form_label_captcha{
-    top: 73.6px;
-    left: 12.8px;
-    font-size: 12.8px;
-    font-weight: 600;
-    z-index: 5;
-}
-
-.form_input_captcha:focus{
-    border: 1.6px solid rgb( 0 , 255 , 255 );
-
-}
-
-
-
-
