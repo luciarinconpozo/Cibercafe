@@ -1,7 +1,13 @@
 form{
+<<<<<<< HEAD
   text-align: center;
   margin-top: 40px;
   color: white;
+=======
+  color: white;
+    text-align: center;
+    margin-top: 40px;
+>>>>>>> 4d3d75b4833f9b92e192a758f0836b742a945794
   }
 
 fieldset {
@@ -52,7 +58,10 @@ input{
 #divDatos{
   margin-top: 30px;
   margin-bottom: 30px;
+<<<<<<< HEAD
   margin-top: 60px;
   color: rgb(0, 255, 255);
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
+=======
+>>>>>>> 4d3d75b4833f9b92e192a758f0836b742a945794

@@ -1,5 +1,3 @@
-/* En tu archivo crm_erp.css */
-
 .container {
   margin-top: 20px;
 }
@@ -10,19 +8,20 @@
 }
 
 .col-md-6 {
-  flex: 0 0 50%; /* Ocupa el 50% del ancho */
+  flex: 0 0 50%; 
   max-width: 50%;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
 h3 {
-  color: rgb(0, 255, 255); /* Color para los títulos */
+  color: rgb(0, 255, 255); 
 }
 
 p {
-  font-size: 18px; /* Tamaño de letra para los párrafos */
-  line-height: 1.6; /* Altura de línea */
+  font-size: 18px;
+  line-height: 1.6; 
+  color: white;
 }
 
 ul {
@@ -36,7 +35,7 @@ ul li {
 }
 
 ul li a {
-  color: rgb(0, 255, 255); /* Color para los enlaces */
+  color: rgb(0, 255, 255); 
   text-decoration: none;
 }
 
