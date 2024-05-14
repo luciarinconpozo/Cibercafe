@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="ElCSS.css">
     <link rel="stylesheet" href="../../CSS/header_footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../CSS/reserva.css">
+    <link rel="stylesheet" href="../../CSS/compraEventos.css">
     <link rel="stylesheet" href="../../CSS/header_footer.css">
 </head>
+
 <body>
 
     <header>
@@ -36,37 +36,49 @@
         </div>
     </header>
 
-
     <form>
-        <fieldset>
-            <div id="divfecha">
-                <label for="fecha" style="font-size: 22px;">Selecciona un dia: </label>
-                <br>
-                <input type="date" id="fecha" name="fecha" style="width: 220px; height: 50px;">
-            </div>
-            <div id="divHora">
-                <label for="hora" style="font-size: 22px;">Selecciona una hora: </label>
-                <br>
-                <input type="time" id="hora" name="hora" style="width: 160px; height: 30px;">
-            </div>
-            <div id="divCantidad">
-                <label for="cantidad" style="font-size: 22px;">Numero de asistentes: </label>
-                <br>
-                <input type="number" id="cantidad" name="cantidad" min="0" max="50" step="1" style="width: 160px; height: 30px;">
-            </div>
-            <div id="divDatos">
-                <label for="nombre" style="font-size: 22px;">Datos de contacto: </label>
-                <br>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre de reserva" style="width: 200px; height: 24px;" required>
-                <br>
-                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" style="width: 200px; height: 24px;" required>
-                <br>
-                <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width: 200px; height: 24px;" required>
-            </div>
-        </fieldset>
-        <br>
-            <input type="submit" value="Finalizar Reserva" id="finalizarReserva" style="width: 200px; height: 45px;">
-            <input type="reset" value="Reiniciar" id="finalizarReserva" style="width: 200px; height: 45px;">
+        <div id="tituloDireccion">
+            <label for="hora" style="font-size: 25px;">Ingrese su dirección: </label>
+        </div>
+        <div id="divDireccion">
+            <fieldset id="datosDireccion">
+                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" style= "height: 20px;">
+                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad" style= "height: 20px;">
+                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal" style= "height: 20px;">
+            </fieldset>
+        </div>
+        <div id="datosBancarios">
+            <label for="hora" style="font-size: 25px;">Datos bancarios: </label>
+        </div>
+        <div id="nombreTitular">
+            <input type="text" name="NombreDelTitular" placeholder="Nombre del Titular" style="width: 250px; height: 30px;">
+        </div>
+        <div id="numeroTarjeta">
+            <input type="number" name="NumeroTarjeta" placeholder="Numero Tarjeta" style="width: 250px; height: 30px;">
+        </div>
+        <div id="fechaCaducidad">
+            <input type="date" name="FechaCaducidad" placeholder="Fecha Caducidad" style="width: 250px; height: 30px;">
+        </div>
+        <div id="CVV">
+            <input type="number" name="CVV" placeholder="CVV" style="width: 250px; height: 30px;">
+        </div>
+
+        <div id="datosCliente">
+            <label for="hora" style="font-size: 25px;">Datos del cliente: </label>
+        </div>
+        <div id="DNI">
+            <input type="text" name="DNI" placeholder="DNI" style="width: 250px; height: 30px;">
+        </div>
+        <div id="nombreApellidos">
+            <input type="text" name="NombreApellidos" placeholder="Nombre y Apellidos" style="width: 250px; height: 30px;">
+        </div>
+        <div id="correo">
+            <input type="email" name="Correo" placeholder="Correo" style="width: 250px; height: 30px;">
+        </div>
+
+        <div id="divFinalizarCompra">
+            <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra" style="width: 200px; height: 45px;">
+        </div>
     </form>
 
     <footer>

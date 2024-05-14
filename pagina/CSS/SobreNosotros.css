@@ -32,10 +32,10 @@ details summary::marker {
   }
 
   #tabla2Abel{
-    margin-left: 35%;
+    margin-left: 34.5%;
   }
   #tabla2Abel h1{
-    margin-left: 4%;
+    margin-left: 5%;
   }
 
 #imagenSobrenosotrosAbel{
@@ -87,24 +87,34 @@ main{
 }
 
 body{
-  margin: 0;
-  margin-bottom: 40px;
-    background-color: rgb(85, 85, 85);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+button a{
+  text-decoration: none;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  
 }
+
 button{
-    border-radius: 20px;
-    color: white;
-    background-color: rgb(12, 115, 184);
+  color: #000000;
+  background-color: #3daeff; 
+  box-shadow: 0 0 10px rgba(60, 248, 255, 0.8);
+
+  font-size: large;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
 }
 button:hover{
-    background-color: rgb(4, 44, 71);
+  background-color: #89ceff;
 }
+
 html{
   min-height: 100%;
   position: relative;
@@ -113,11 +123,4 @@ html{
 .extraAbel img{
   width: 13px;
   height: 13px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-height: 40%;
 }
