@@ -87,6 +87,7 @@ main{
 }
 
 body{
+  margin: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -123,4 +124,20 @@ html{
 .extraAbel img{
   width: 13px;
   height: 13px;
+}
+
+p{
+  margin-left: 10px;
+}
+h1{
+  margin-left: 10px;
+}
+summary{
+  margin-left: 10px;
+}
+
+iframe{
+  width: 70%;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
