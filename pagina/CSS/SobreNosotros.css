@@ -49,32 +49,39 @@ details summary::marker {
 #parteInferiorAbel{
     float: left;
 }
-
+/*-------------------------------------------------------*/
 #imagenRedesSociales1Abel{
-    margin-left: 10%;
+    margin-top: 6px;
+    margin-left: 15%;
     float: left;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    width: 15%;
+    height: 15%;
     box-sizing: border-box;
-    background-image: url(https://www.instagram.com/);
 }
 #imagenRedesSociales2Abel{
+    margin-top: 6px;
     float: right;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    width: 15%;
+    height: 15%;
     box-sizing: border-box;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 #imagenRedesSociales3Abel{
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    margin-top: 6px;
+    float: left;
+    width: 15%;
+    height: 15%;
     box-sizing: border-box;
-    margin-left: 40%;
+    margin-left: 3%;
 }
-
+#imagenRedesSociales4Abel{
+  margin-top: 6px;
+  width: 15%;
+  height: 15%;
+  box-sizing: border-box;
+  margin-left: 52%;
+}
+/*-------------------------------------------------------*/
 #textoSobrenosotrosAbel{
     margin-top: 5px;
     float: left;
@@ -87,7 +94,6 @@ main{
 }
 
 body{
-  margin: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -129,19 +135,23 @@ html{
 p{
   margin-left: 10px;
 }
+
 h1{
   margin-left: 10px;
 }
+
+h2{
+  margin-left: 10px;
+}
+
 summary{
   margin-left: 10px;
 }
-
 iframe{
   width: 70%;
   margin-left: 10px;
-  margin-bottom: 5px;
 }
 
-#ocultar{
-  visibility: hidden;
+#oculto{
+  visibility:hidden;
 }
