@@ -4,18 +4,20 @@ form{
 }
 
 #tituloDireccion{
-  color: rgb(0, 255, 255);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
-  margin-right: 250px;
+  margin-right: 200px;
 }
 
 #datosDireccion {
   display: inline-block;
-  border-color: rgb(0, 255, 255);;
-  box-shadow: 5px 5px 5px rgb(0, 255, 255);
-  border-width: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb( 0 , 255 , 255 );
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
 #divDireccion{
@@ -25,6 +27,8 @@ form{
 
 #Direccion{
   border-radius: 10px;
+  width: 250px;
+  height: 30px;
 }
 
 #datosBancarios{

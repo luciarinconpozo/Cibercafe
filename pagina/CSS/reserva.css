@@ -1,20 +1,15 @@
 form{
-<<<<<<< HEAD
+  color: white;
   text-align: center;
   margin-top: 40px;
-  color: white;
-=======
-  color: white;
-    text-align: center;
-    margin-top: 40px;
->>>>>>> 4d3d75b4833f9b92e192a758f0836b742a945794
-  }
+}
 
 fieldset {
   display: inline-block;
-  box-shadow: 0 2px 4px rgba(0, 255, 255, 0.8);
-  border: 2px solid rgb(0, 255, 255);
-  border-radius: 5px;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid rgb( 0 , 255 , 255 );
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
 input{
@@ -24,13 +19,12 @@ input{
 
 #finalizarReserva{
   border-radius: 10px;
-  background-color: rgb(255, 0, 77);
-  color: rgb(0, 0, 0);
+  color: #000000;
+  background-color: #3daeff;
 }
 
 #finalizarReserva:hover{
-  background-color: rgb(0, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #89ceff;
 }
 
 input{
@@ -38,9 +32,9 @@ input{
 }
 
 #divFecha{
-  margin-top: 30px;
-  color: rgb(0, 255, 255);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: white;
+  font-weight: 300px;
+  text-align: center;
 }
 
 #divHora{
@@ -58,10 +52,7 @@ input{
 #divDatos{
   margin-top: 30px;
   margin-bottom: 30px;
-<<<<<<< HEAD
   margin-top: 60px;
   color: rgb(0, 255, 255);
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
-=======
->>>>>>> 4d3d75b4833f9b92e192a758f0836b742a945794
