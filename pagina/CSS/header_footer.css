@@ -69,6 +69,7 @@ header nav ul {
 header nav ul li {
   display: inline;
   margin-right: 20px; 
+  margin-left: 20px; 
   text-align: center;
   
 }
@@ -126,6 +127,7 @@ footer nav ul {
 footer nav ul li {
   display: inline;
   margin-right: 20px; 
+  margin-left: 20px; 
   text-align: center;
 }
 footer nav ul li a {
@@ -143,6 +145,7 @@ footer img {
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 footer .imagenes{
