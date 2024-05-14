@@ -95,7 +95,6 @@ h2 {
 .carrusel figure:nth-child(8) {
   transform: rotateY(315deg) translateZ(430px);
 }
-/* Ajusta los ángulos para más figuras */
 
 .carrusel img {
   height: 200px;
@@ -114,6 +113,23 @@ h2 {
   position: relative;
   width: 99%;
 }
+
+.boton_compraEventos {
+  background-color: rgb(255, 0, 77);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.boton_compraEventos:hover {
+  background-color: rgb(0, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
 @keyframes rotar {
   from {
     transform: rotateY(0deg);
