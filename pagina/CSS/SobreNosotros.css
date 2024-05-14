@@ -87,9 +87,7 @@ main{
 }
 
 body{
-  margin: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  margin-left: 10px;
 }
 
 button a{
@@ -126,5 +124,3 @@ html{
   width: 13px;
   height: 13px;
 }
-
-
