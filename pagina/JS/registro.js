@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
 const divs = this.document.querySelectorAll(".form_div");
 const inputbox = document.querySelectorAll(".form_input");
 const inputcaptcha = document.querySelector(".captcha_form input");
