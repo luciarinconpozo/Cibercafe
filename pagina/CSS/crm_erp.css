@@ -18,27 +18,14 @@ h3 {
   color: rgb(0, 255, 255); 
 }
 
+h4 {
+  color: rgb(255, 0, 77);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.6; 
   color: white;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-ul li a {
-  color: rgb(0, 255, 255); 
-  text-decoration: none;
-}
-
-ul li a:hover {
-  text-decoration: underline;
 }
