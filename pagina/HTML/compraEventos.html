@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../CSS/compraEventos.css">
-    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/compraEventos.css">
 </head>
 
 <body>
@@ -51,29 +50,30 @@
             <label for="hora">Datos bancarios: </label>
         </div>
         <div id="nombreTitular">
-            <input type="text" name="NombreDelTitular" placeholder="Nombre del Titular">
+            <input type="text" id="inputBancario" name="NombreDelTitular" placeholder="Nombre del Titular">
         </div>
         <div id="numeroTarjeta">
-            <input type="number" name="NumeroTarjeta" placeholder="Numero Tarjeta">
+            <input type="number" id="inputBancario" name="NumeroTarjeta" placeholder="Numero Tarjeta">
         </div>
         <div id="fechaCaducidad">
-            <input type="date" name="FechaCaducidad" placeholder="Fecha Caducidad">
+            <input type="date" id="inputBancario" name="FechaCaducidad" placeholder="Fecha Caducidad">
         </div>
         <div id="CVV">
-            <input type="number" name="CVV" placeholder="CVV">
+            <input type="number" id="inputBancario" name="CVV" placeholder="CVV">
         </div>
+
 
         <div id="datosCliente">
             <label for="hora" >Datos del cliente: </label>
         </div>
         <div id="DNI">
-            <input type="text" name="DNI" placeholder="DNI">
+            <input type="text" id="inputCliente" name="DNI" placeholder="DNI">
         </div>
         <div id="nombreApellidos">
-            <input type="text" name="NombreApellidos" placeholder="Nombre y Apellidos">
+            <input type="text" id="inputCliente" name="NombreApellidos" placeholder="Nombre y Apellidos">
         </div>
         <div id="correo">
-            <input type="email" name="Correo" placeholder="Correo">
+            <input type="email" id="inputCliente" name="Correo" placeholder="Correo">
         </div>
 
         <div id="divFinalizarCompra">

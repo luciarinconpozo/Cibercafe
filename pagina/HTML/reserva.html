@@ -2,13 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="ElCSS.css">
-    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../CSS/reserva.css">
-    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../CSS/reserva.css">
 </head>
 <body>
 
@@ -43,19 +41,19 @@
                 <label for="fecha">Selecciona un dia: </label>
             </div>
             <div id="fecha">
-                <input type="date" name="fecha">
+                <input type="date" id="fecha" name="fecha">
             </div>
             <div id="divHora">
                 <label for="hora">Selecciona una hora: </label>
             </div>
             <div id="hora">
-                <input type="time" name="hora">
+                <input type="time" id="hora" name="hora">
             </div>
             <div id="divCantidad">
                 <label for="cantidad">Numero de asistentes: </label>
             </div>
             <div id="cantidad">
-                <input type="number" name="cantidad" min="0" max="50" step="1">
+                <input type="number" id="cantidad" name="cantidad" min="0" max="50" step="1">
             </div>
 
 
@@ -66,13 +64,13 @@
                 <label for="nombre">Datos de contacto: </label>
             </div>
             <div>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre de reserva">
+                <input type="text" id="inputContacto" name="nombre" placeholder="Nombre de reserva">
             </div>
             <div>
-                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                <input type="email" id="inputContacto" name="correo" placeholder="correo@ejemplo.com">
             </div>
             <div>
-                <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono">
+                <input type="tel" id="inputContacto" name="telefono" placeholder="Número de teléfono">
             </div>
         </fieldset>
         <br>
