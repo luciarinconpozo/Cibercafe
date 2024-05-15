@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="../../CSS/header_footer.css">
+    <link rel="stylesheet" href="../../CSS/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="../../JS/validacionFormulario.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../IMAGENES/icon.png" alt="Experto informático">
+            <h1>La Ciénaga Cósmica</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./reserva.html">Reserva</a></li>
+                <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="iconos">
+            <a href="./inicioSesion.html"><img id="user_icon" src="../../IMAGENES/user_icon.svg"
+                    alt="icono de usuario"></a>
+            <a href="./carrito.html"><img id="carrito_icon" src="../../IMAGENES/carrito_icon.svg"
+                    alt="icono de carrito de compra"></a>
+        </div>
+    </header>
+
+
+    <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctanos!</p>
+        
+        <form action="correodeprueba@gmail.com" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="text" id="email" name="email" required>
+            <p id="email-error" class="error-message"></p>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <input type="submit" value="Enviar mensaje">
+        </form>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
+        <div class="imagenes">
+            <img src="../../IMAGENES/logo_instragram.svg" alt="logo de instagram">
+            <img src="../../IMAGENES/logo_twitch.svg" alt="logo de twitch">
+            <img src="../../IMAGENES/logo_twitter.svg" alt="logo de twitter">    
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./avisoLegal.html">Aviso Legal</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./crm_erp.html">CRM y ERP</a></li>
+                <li><a href="./politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="./politicaPrivacidad.html">Política Privacidad</a></li>
+                <li><a href="./rss.html">RSS</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Popup de éxito -->
+    <div id="popup-success" class="popup">
+        <div class="popup-content success">
+            <span class="close" onclick="closePopupSuccess()">&times;</span>
+            <p id="popup-message-success"></p>
+        </div>
+    </div>
+
+    <!-- Popup de error -->
+    <div id="popup-error" class="popup">
+        <div class="popup-content error">
+            <span class="close" onclick="closePopupError()">&times;</span>
+            <p id="popup-message-error"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
