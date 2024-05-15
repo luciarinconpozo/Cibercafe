@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <script src="../JS/validacionFormulario.js" defer></script>
-
-
+    <script src="../JS/validacionFormulario.js"></script>
+    <script src="../JS/popupsContacto.js"></script>
 </head>
 <body>
     <header>
@@ -39,12 +38,11 @@
         </div>
     </header>
 
-
     <div class="contenedor">
         <h1>Contacto</h1>
         <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctanos!</p>
         
-        <form action="correodeprueba@gmail.com" method="POST" enctype="text/plain">
+        <form id="contacto-form" action="mailto:correodeprueba@gmail.com" method="POST" enctype="text/plain">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre">
             
@@ -58,8 +56,6 @@
             <input type="submit" value="Enviar mensaje">
         </form>
     </div>
-
-
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
@@ -96,6 +92,5 @@
             <p id="popup-message-error"></p>
         </div>
     </div>
-    
 </body>
 </html>
