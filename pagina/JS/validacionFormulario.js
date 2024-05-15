@@ -1,48 +1,39 @@
 
-function openPopupSuccess(message) {
-    var popupSuccess = document.getElementById('popup-success');
-    var popupMessageSuccess = document.getElementById('popup-message-success');
-    popupMessageSuccess.textContent = message;
-    popupSuccess.style.display = 'block';
-}
-
-
-function closePopupSuccess() {
-    var popupSuccess = document.getElementById('popup-success');
-    popupSuccess.style.display = 'none';
-}
-
-function openPopupError(message) {
-    var popupError = document.getElementById('popup-error');
-    var popupMessageError = document.getElementById('popup-message-error');
-    popupMessageError.textContent = message;
-    popupError.style.display = 'block';
-}
-
-
-function closePopupError() {
-    var popupError = document.getElementById('popup-error');
-    popupError.style.display = 'none';
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
+    const form = document.getElementById('contacto-form');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
+        const nombreInput = document.getElementById('nombre');
         const emailInput = document.getElementById('email');
+        const mensajeInput = document.getElementById('mensaje');
         const email = emailInput.value;
-
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Validación de nombre
+        if (!nombreInput.value.trim()) {
+            openPopupError('Por favor, introduce tu nombre.');
+            return;
+        }
+
+        // Validación de correo
+        if (!emailInput.value.trim()) {
+            openPopupError('Por favor, introduce tu correo electrónico.');
+            return;
+        }
 
         if (!emailPattern.test(email)) {
             openPopupError('Por favor, introduce una dirección de correo electrónico válida.');
             return; 
-        } else {
-
-            openPopupSuccess('Mensaje enviado correctamente.');
-
         }
+
+        // Validación de mensaje
+        if (!mensajeInput.value.trim()) {
+            openPopupError('Por favor, introduce tu mensaje.');
+            return;
+        }
+
+        openPopupSuccess('Mensaje enviado correctamente.');
     });
 });
