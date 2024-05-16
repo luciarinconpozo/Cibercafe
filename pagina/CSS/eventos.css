@@ -1,19 +1,13 @@
-
-h1 {
+/* Estilos generales */
+h1, h2 {
   color: white;
   font-size: 40px;
-  text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d, 0 0 30px #ff004d, 0 0 40px #ff004d, 0 0 70px #ff004d, 0 0 80px #ff004d, 0 0 100px #ff004d, 0 0 150px #ff004d;
   text-align: center;
+  text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d, 0 0 30px #ff004d, 0 0 40px #ff004d, 0 0 70px #ff004d, 0 0 80px #ff004d, 0 0 100px #ff004d, 0 0 150px #ff004d;
 }
 
 h2 {
   color: #ff004d;
-  font-size: 40px;
-  text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d, 0 0 30px #ff004d, 0 0 40px #ff004d, 0 0 70px #ff004d, 0 0 80px #ff004d, 0 0 100px #ff004d, 0 0 150px #ff004d;
-  text-align: center;
-}
-.compra-entrada h2{
-  text-align: left;
 }
 
 .informacion {
@@ -37,19 +31,15 @@ h2 {
 .peliculas {
   display: flex;
   flex-direction: column;
-  /* Alineación de los elementos en una columna */
   justify-content: space-between;
-  /* Distribución uniforme de espacio entre los elementos */
   position: relative;
   width: 100%;
-  /* O ajusta el ancho según necesites */
   height: 400px;
-  /* O ajusta la altura según necesites */
-  perspective: 100%
+  perspective: 100%;
 }
 
 .carrusel {
-  animation: rotar 10s infinite linear;
+  animation: rotar 40s infinite linear; /* Cambia la duración de la animación a 40s */
   transform-style: preserve-3d;
 }
 
@@ -64,6 +54,8 @@ h2 {
   position: absolute;
   box-shadow: none; /* Eliminar el borde */
   transition: all 5000ms;
+  transform-origin: 50% 50%; /* Establece el punto de origen de la transformación */
+  transform: perspective(600px) rotateY(0deg) rotateZ(0deg); /* Aplica la perspectiva y la rotación */
 }
 
 .carrusel figure:hover {
@@ -72,28 +64,28 @@ h2 {
 }
 
 .carrusel figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(430px);
+  transform: rotateY(0deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(2) {
-  transform: rotateY(45deg) translateZ(430px);
+  transform: rotateY(45deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(3) {
-  transform: rotateY(90deg) translateZ(430px);
+  transform: rotateY(90deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(4) {
-  transform: rotateY(135deg) translateZ(430px);
+  transform: rotateY(135deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(5) {
-  transform: rotateY(180deg) translateZ(430px);
+  transform: rotateY(180deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(6) {
-  transform: rotateY(225deg) translateZ(430px);
+  transform: rotateY(225deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(7) {
-  transform: rotateY(270deg) translateZ(430px);
+  transform: rotateY(270deg) translateZ(500px) rotateZ(0deg);
 }
 .carrusel figure:nth-child(8) {
-  transform: rotateY(315deg) translateZ(430px);
+  transform: rotateY(315deg) translateZ(500px) rotateZ(0deg);
 }
 
 .carrusel img {
@@ -103,7 +95,7 @@ h2 {
 }
 
 .carrusel img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   transition: all 5000ms;
 }
 /* Ajusta los ángulos para más figuras */
@@ -134,21 +126,21 @@ h2 {
 
 @keyframes rotar {
   from {
-    transform: rotateY(0deg);
+      transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+      transform: rotateY(360deg);
   }
 }
 
 @keyframes cambioColor {
   0% {
-    border-color: rgba(255, 0, 77, 0.8); /* Color inicial del borde con transparencia */
+      border-color: rgba(255, 0, 77, 0.8);
   }
   50% {
-    border-color: rgba(0, 255, 0, 0.8); /* Color intermedio del borde con transparencia */
+      border-color: rgba(0, 255, 0, 0.8);
   }
   100% {
-    border-color: rgba(0, 255, 234, 0.8); /* Color final del borde con transparencia */
+      border-color: rgba(0, 255, 234, 0.8);
   }
 }

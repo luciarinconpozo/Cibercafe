@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/carrito.css">
     <link rel="stylesheet" href="../CSS/header_footer.css">
-
     <title>Document</title>
 </head>
 <body>
@@ -32,34 +31,64 @@
             <a href="./inicioSesion.html"><img id="user_icon" src="../IMAGENES/user_icon.svg"
                     alt="icono de usuario"></a>
             <a href="./carrito.html"><img id="carrito_icon" src="../IMAGENES/carrito_icon.svg"
-
                     alt="icono de carrito de compra"></a>
         </div>
     </header>
-    <main>
         <section class="productos">
             <h2>Productos seleccionados</h2>
             <ul>
                 <li class="producto" data-producto-id="1">
-                    <div class="producto__carrusel">
-                        <img src="producto1.jpg" alt="Producto 1">
+                    <div class="carrusel_productos">
+                        <div class="carrusel">
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/ft1.jpeg" alt="Imagen 1">
+                          </div>
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/ft2.jpeg" alt="Imagen 2">
+                          </div>
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/ft3.jpeg" alt="Imagen 3">
+                          </div>
+                        </div>
+                        <div class="botones_carrusel">
+                          <button class="prev">Anterior</button>
+                          <button class="next">Siguiente</button>
+                        </div>
                     </div>
                     <div class="producto__informacion">
                         <h3>Producto 1</h3>
-                        <p>Precio Total: <span class="producto__precio-total">100</span>€</p>
+                        <p>100€</p>
+                        <p>Precio Total: <span class="producto__precio-total">0</span>€</p>
                         <input type="number" min="0" value="0" class="producto__cantidad">
                         <button class="producto__boton-agregar">Agregar</button>
+                        <button class="producto_boton-resetear">Resetear</button>
                     </div>
                 </li>
                 <li class="producto" data-producto-id="2">
-                    <div class="producto__carrusel">
-                        <img src="producto2.jpg" alt="Producto 2">
+                  <div class="carrusel_productos">
+                    <div class="carrusel">
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft1.jpeg" alt="Imagen 1">
+                      </div>
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft2.jpeg" alt="Imagen 2">
+                      </div>
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft3.jpeg" alt="Imagen 3">
+                      </div>
                     </div>
+                    <div class="botones_carrusel">
+                      <button class="prev">Anterior</button>
+                      <button class="next">Siguiente</button>
+                    </div>
+                </div>
                     <div class="producto__informacion">
                         <h3>Producto 2</h3>
+                        <p>50€<p>
                         <p>Precio Total: <span class="producto__precio-total">50</span>€</p>
                         <input type="number" min="0" value="0" class="producto__cantidad">
                         <button class="producto__boton-agregar">Agregar</button>
+                        <button class="producto_boton-resetear">Resetear</button>
                     </div>
                 </li>
                 </ul>
@@ -72,15 +101,14 @@
             <p>Total: <span id="resumen__total">0</span>€</p>
             <button id="resumen__boton-pagar">Pagar</button>
         </section>
-    </main>
-    <script src="../../JS/carrito.js"></script>
+    <script src="../JS/carrito.js"></script>
+    <script src="../JS/carrusel_carrito.js"></script>
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
         <div class="imagenes">
             <img src="../IMAGENES/logo_instragram.svg" alt="logo de instagram">
             <img src="../IMAGENES/logo_twitch.svg" alt="logo de twitch">
             <img src="../IMAGENES/logo_twitter.svg" alt="logo de twitter">    
-
         </div>
 
         <nav>
