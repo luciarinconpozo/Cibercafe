@@ -49,32 +49,41 @@ details summary::marker {
 #parteInferiorAbel{
     float: left;
 }
-
+iframe{
+  width: 80%;
+  margin-left: 5%;
+}
+/*----------------------------------------------------------*/
 #imagenRedesSociales1Abel{
-    margin-left: 10%;
     float: left;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    width: 15%;
+    height: 15%;
     box-sizing: border-box;
-    background-image: url(https://www.instagram.com/);
+    margin-left: 8%;
 }
 #imagenRedesSociales2Abel{
     float: right;
-    width: 20%;
-    height: 20%;
-    text-align: center;
+    width: 15%;
+    height: 15%;
+    box-sizing: border-box;
+    margin-right: 3%;
+}
+#imagenRedesSociales3Abel{
+    float: right;
+    width: 15%;
+    height: 15%;
     box-sizing: border-box;
     margin-right: 10%;
 }
-#imagenRedesSociales3Abel{
-    width: 20%;
-    height: 20%;
-    text-align: center;
-    box-sizing: border-box;
-    margin-left: 40%;
-}
 
+#imagenRedesSociales4Abel{
+  float: left;
+  width: 15%;
+  height: 15%;
+  box-sizing: border-box;
+  margin-left: 10%;
+}
+/*----------------------------------------------------------*/
 #textoSobrenosotrosAbel{
     margin-top: 5px;
     float: left;
@@ -123,4 +132,8 @@ html{
 .extraAbel img{
   width: 13px;
   height: 13px;
+}
+
+#oculto{
+  visibility: hidden;
 }
