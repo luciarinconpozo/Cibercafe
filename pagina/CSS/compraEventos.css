@@ -4,18 +4,25 @@ form{
 }
 
 #tituloDireccion{
-  color: rgb(0, 255, 255);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
-  margin-right: 250px;
+  margin-right:390px;
+}
+
+#titulo{
+  font-size: 33px;
+  font-weight: bold;
 }
 
 #datosDireccion {
   display: inline-block;
-  border-color: rgb(0, 255, 255);;
-  box-shadow: 5px 5px 5px rgb(0, 255, 255);
-  border-width: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb( 0 , 255 , 255 );
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
 #divDireccion{
@@ -25,13 +32,18 @@ form{
 
 #Direccion{
   border-radius: 10px;
+  width: 250px;
+  height: 30px;
+  background-color: rgb(15, 15, 15);
+  color: white;
 }
 
 #datosBancarios{
+  font-size: 33px;
+  font-weight: bold;
   margin-top: 60px;
   text-align: center;
-  color: rgb(0, 255, 255);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: white;
 }
 
 #nombreTitular{
@@ -60,10 +72,27 @@ input{
 }
 
 #datosCliente{
+  font-size: 33px;
+  font-weight: bold;
   margin-top: 60px;
   text-align: center;
-  color: rgb(0, 255, 255);
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+#inputBancario{
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+#inputCliente{
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  background-color: rgb(15, 15, 15);
+  color: white;
 }
 
 #DNI{
@@ -83,8 +112,11 @@ input{
 
 #finalizarCompra{
   border-radius: 10px;
-  background-color: rgb(255, 0, 77);
-  color: rgb(0, 0, 0);
+  background-color: rgb( 0 , 255 , 255 ) ;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
 }
 
 #divFinalizarCompra{
@@ -93,6 +125,7 @@ input{
 }
 
 #finalizarCompra:hover{
-  background-color: rgb(0, 255, 255);
-  color: rgb(0, 0, 0);
+  transform: scale(0.90);
+  box-shadow: 0 5px 5px white;
+  transition: .4s;
 }

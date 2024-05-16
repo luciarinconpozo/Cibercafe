@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/compraEventos.css">
-    <link rel="stylesheet" href="../CSS/header_footer.css">
 
 </head>
 
@@ -39,46 +38,47 @@
 
     <form>
         <div id="tituloDireccion">
-            <label for="hora" style="font-size: 25px;">Ingrese su dirección: </label>
+            <label for="hora" id="titulo">Ingrese su dirección: </label>
         </div>
         <div id="divDireccion">
             <fieldset id="datosDireccion">
-                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion" style= "height: 20px;">
-                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad" style= "height: 20px;">
-                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal" style= "height: 20px;">
+                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion">
+                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad">
+                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal">
             </fieldset>
         </div>
         <div id="datosBancarios">
-            <label for="hora" style="font-size: 25px;">Datos bancarios: </label>
+            <label for="hora">Datos bancarios: </label>
         </div>
         <div id="nombreTitular">
-            <input type="text" name="NombreDelTitular" placeholder="Nombre del Titular" style="width: 250px; height: 30px;">
+            <input type="text" id="inputBancario" name="NombreDelTitular" placeholder="Nombre del Titular">
         </div>
         <div id="numeroTarjeta">
-            <input type="number" name="NumeroTarjeta" placeholder="Numero Tarjeta" style="width: 250px; height: 30px;">
+            <input type="number" id="inputBancario" name="NumeroTarjeta" placeholder="Numero Tarjeta">
         </div>
         <div id="fechaCaducidad">
-            <input type="date" name="FechaCaducidad" placeholder="Fecha Caducidad" style="width: 250px; height: 30px;">
+            <input type="date" id="inputBancario" name="FechaCaducidad" placeholder="Fecha Caducidad">
         </div>
         <div id="CVV">
-            <input type="number" name="CVV" placeholder="CVV" style="width: 250px; height: 30px;">
+            <input type="number" id="inputBancario" name="CVV" placeholder="CVV">
         </div>
 
+
         <div id="datosCliente">
-            <label for="hora" style="font-size: 25px;">Datos del cliente: </label>
+            <label for="hora" >Datos del cliente: </label>
         </div>
         <div id="DNI">
-            <input type="text" name="DNI" placeholder="DNI" style="width: 250px; height: 30px;">
+            <input type="text" id="inputCliente" name="DNI" placeholder="DNI">
         </div>
         <div id="nombreApellidos">
-            <input type="text" name="NombreApellidos" placeholder="Nombre y Apellidos" style="width: 250px; height: 30px;">
+            <input type="text" id="inputCliente" name="NombreApellidos" placeholder="Nombre y Apellidos">
         </div>
         <div id="correo">
-            <input type="email" name="Correo" placeholder="Correo" style="width: 250px; height: 30px;">
+            <input type="email" id="inputCliente" name="Correo" placeholder="Correo">
         </div>
 
         <div id="divFinalizarCompra">
-            <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra" style="width: 200px; height: 45px;">
+            <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra">
         </div>
     </form>
 
