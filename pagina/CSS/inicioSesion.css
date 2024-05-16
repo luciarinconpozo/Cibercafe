@@ -107,3 +107,23 @@ body{
     margin: 12px;
     border: 1px solid white;
 }
+
+
+form .error-mensaje ul {
+    padding: 0;
+    list-style: none;
+}
+form .error-mensaje li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+form #errores{
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid red;
+    display: none;
+
+
+}
