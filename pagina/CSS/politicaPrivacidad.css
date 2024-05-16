@@ -5,11 +5,26 @@
 }
 
 #tituloPolitica{
+    color: white;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
 #tituloTexto{
+    color: white;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#lista {
+    list-style-type: circle;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+#lista li {
+    padding: 10px;
+    margin-bottom: 5px;
 }
