@@ -96,8 +96,6 @@ body{
     cursor: pointer;
     transition: .4s;
     margin-top: 100px;
-    opacity: 0.3;
-    pointer-events: none;
 }
 
 .form input.active{
@@ -126,19 +124,36 @@ body{
 
 
 
-.form_input:not(::placeholder-shown).form_input:not(:focus) + .form_label{
-    top: -8px;
-    left: 12.8px;
-    color: white;
-    font-size: 12.8px; 
-    font-weight: 600;
-    z-index: 5;
-}
+
 
 .form_input:focus{
     color: white;
     border: 1.6px solid rgb( 0 , 255 , 255 );
 }
+
+
+form .error-mensaje ul {
+    padding: 0;
+    list-style: none;
+}
+form .error-mensaje li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+form #errores{
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid red;
+    display: none;
+
+
+}
+
+
+
+
 
 .signin_form #captcha .preview{
     color: white;
