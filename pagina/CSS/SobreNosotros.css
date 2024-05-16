@@ -1,13 +1,4 @@
-
-details summary::marker {
-    content: "Ver mas";
-    color: white;
-    font-size: 1.5rem;
-  }
-  details[open] summary::marker {
-    content: "Ver menos";
-  }
-  #areadeTextoAbel{
+#areadeTextoAbel{
     resize: none;
   }
 
@@ -136,4 +127,19 @@ html{
 
 #oculto{
   visibility: hidden;
+}
+
+.desplegableSB{
+  display: none;
+}
+
+#boton{
+  color: #000000;
+  background-color: #3daeff; 
+  box-shadow: 0 0 10px rgba(60, 248, 255, 0.8);
+
+  font-size: medium;
+  padding: 5px 5px;
+  margin: 10px;
+  border-radius: 5px;
 }
