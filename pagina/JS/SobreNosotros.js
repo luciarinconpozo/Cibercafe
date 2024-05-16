@@ -19,3 +19,4 @@ document.getElementById("boton").addEventListener("click",function() {
         console.error("Error");
     }
 });
+
