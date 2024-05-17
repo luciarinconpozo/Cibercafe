@@ -11,7 +11,7 @@ const productosSeleccionados = [];
 const subtotalElement = document.getElementById("resumen__subtotal"); // Muestra el subtotal
 const envioElement = document.getElementById("resumen__envio"); // Muestra el costo de envío
 const totalElement = document.getElementById("resumen__total"); // Muestra el total
-const botonPagarElement = document.getElementById("resumen__boton-pagar"); // Botón "Pagar"
+const botonReservarElement = document.getElementById("resumen__boton-reservar"); // Botón "Reservar Entradas"
 const botonesAgregar = document.querySelectorAll(".producto__boton-agregar"); // Selecciona todos los botones "Agregar"
 const botonesResetear = document.querySelectorAll(".producto_boton-resetear"); // Selecciona todos los botones "Resetear"
 
@@ -39,7 +39,7 @@ const actualizarResumen = () => {
     envioElement.textContent = envio; // Muestra el costo de envío actualizado
     totalElement.textContent = total; // Muestra el total actualizado
 
-    botonPagarElement.disabled = subtotal === 0; // Habilita o deshabilita el botón "Pagar" según haya o no productos en el carrito
+    botonReservarElement.disabled = subtotal === 0; // Habilita o deshabilita el botón "Pagar" según haya o no productos en el carrito
 };
 
 // Función para agregar un producto al carrito
@@ -89,8 +89,7 @@ botonesResetear.forEach(boton => {
     });
 });
 
-botonPagarElement.addEventListener("click", () => { // Agrega un event listener al clic del botón "Pagar"
-    alert("¡Gracias por tu compra!"); // Muestra una alerta de confirmación
+botonReservarElement.addEventListener("click", () => { // Agrega un event listener al clic del botón "Pagar"
     productosSeleccionados.length = 0; // Vacía el array de productos seleccionados
     actualizarResumen(); // Actualiza el resumen del carrito
 });
