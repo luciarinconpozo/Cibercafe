@@ -1,18 +1,46 @@
-window.addEventListener("load", function () {
+window.addEventListener("load", function () {
     const divs = this.document.querySelectorAll(".form_div");
-        
+
     divs.forEach(div => {
-        div.addEventListener("click", function() {
-            div.querySelector(".form_label").classList.add("activelabel");
+        const input = div.querySelector(".form_input");
+        const label = div.querySelector(".form_label");
+
+        input.addEventListener("input", function () {
+            if (input.value !== "") {
+                label.classList.add("activelabel");
+            }
+            else {
+                label.classList.remove("activelabel");
+            }
+        });
+
+        input.addEventListener("focus", function () {
+            label.classList.add("activelabel");
+        });
+
+        // blur si el elemento pierde el foco
+        input.addEventListener("blur", function () {
+            if (input.value === "") {
+                label.classList.remove("activelabel");
+            }
         });
     }
     );
-    
+
 
     document.getElementById("forgotPass").addEventListener("click", function () {
         alert("Pues no se");
     });
-    
+
+
+    document.getElementById("botonReset").addEventListener("click", function () {
+        let divErrores = document.getElementById("errores");
+        divErrores.style.innerHTML = "";
+        divErrores.style.display = "none";
+
+    });
+
+
 });
 
 
@@ -68,6 +96,6 @@ function mostrarErrores(errores) {
 
     divErrores.appendChild(ul);
 }
-    
+
 
 

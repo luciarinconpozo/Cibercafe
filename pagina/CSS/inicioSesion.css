@@ -42,6 +42,7 @@ body{
 }
 
 .form_input{
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,6 +57,12 @@ body{
     background: none;
 }
 
+.form_input:focus{
+    color: white;
+    border: 1.6px solid rgb( 0 , 255 , 255 );
+}
+
+
 .form_label{
     position: absolute;
     left: 16px;
@@ -66,7 +73,7 @@ body{
     transition: .4s;
 }
 
-.form_button{
+.form_button, .botonReset, .form_button_forgot{
     width: 100%;
     display: block;
     margin-left: auto;
@@ -89,7 +96,7 @@ body{
 }
 
 
-.form_button:hover{
+.form_button:hover, .botonReset:hover, .form_button_forgot:hover{
     transform: scale(0.90);
     box-shadow: 0 5px 5px white;
 }
@@ -102,6 +109,8 @@ body{
     font-weight: 600;
     z-index: 5;
 }
+
+
 
 .form_linea {
     margin: 12px;
@@ -124,6 +133,5 @@ form #errores{
     padding: 20px;
     border: 1px solid red;
     display: none;
-
-
 }
+
