@@ -55,12 +55,13 @@
             </div>
 
             <div class="form_div">
-                <input name="password" type="password" placeholder=" " min="6" max="15" class="form_input" id="input_password">
+                <input name="password" type="password" placeholder=" " class="form_input" id="input_password">
                 <label class="form_label" for="password">Password: </label>
             </div>
 
 
             <input type="submit" class="form_button" value="IniciarSesion">
+            <input type="reset" class="botonReset" id="botonReset" value="Reset">
 
             <div id="errores" class="error-mensaje"></div>
 
@@ -71,7 +72,7 @@
             <legend>¿Nuevo usuario?</legend>
             <a href="./registro.html"><input name="registrarse" type="button"  class="form_button" value="Registrate"></a>
 
-            <button id="forgotPass" class="form_button">Forgot password?</button>
+            <button type="button" id="forgotPass" class="form_button_forgot">Forgot password?</button>
 
         </form>
     </div>
