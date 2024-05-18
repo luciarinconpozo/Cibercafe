@@ -1,0 +1,20 @@
+h1,h2{
+    color: rgb(0, 255, 255); 
+}
+
+p{
+    color: #fff;;
+}
+
+.section{
+    width: 90%;
+}
+a{
+    color: rgba(0, 255, 255, 0.8);
+}
+a:hover{
+    text-shadow: 0 0 10px rgba(67, 255, 255, 0.849);
+}
+a:active{
+    color: #aa0b0b;
+}
