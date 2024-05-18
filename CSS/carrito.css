@@ -1,0 +1,171 @@
+.productos {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.productos h2 {
+  margin-bottom: 10px;
+}
+
+.productos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.producto__informacion {
+  flex: 1;
+  text-align: right;
+}
+
+.producto__informacion h3 {
+  margin-bottom: 5px;
+}
+
+.producto__informacion p {
+  margin-bottom: 5px;
+}
+
+.producto__informacion input[type="number"] {
+  color: #fff;
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: #000;
+}
+
+.producto__cantidad input[type=number]::-webkit-inner-spin-button,
+.producto__cantidad input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+.producto__informacion button {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.resumen {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.resumen h2 {
+  margin-bottom: 10px;
+}
+
+.resumen p {
+  margin-bottom: 5px;
+}
+
+.resumen .subtotal,
+.resumen .envio,
+.resumen .total {
+  font-weight: bold;
+}
+
+.resumen .subtotal span,
+.resumen .envio span,
+.resumen .total span {
+  margin-right: 5px;
+}
+
+.resumen button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.productos h2,
+.productos h3,
+.productos p,
+.productos span.producto__precio-total,
+.resumen h2,
+.resumen p {
+  color: #00FFFF;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+}
+
+/* Estilo para el carrusel de fotos */
+.carrusel_productos {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid white; /* Agrega un borde blanco */
+  border-radius: 5px; /* Opcional: agrega bordes redondeados */
+}
+
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrusel.circular .objeto {
+  transition: transform 1s ease;
+}
+
+.carrusel.circular .objeto.next {
+  transform: translateX(100%);
+}
+
+.carrusel.circular .objeto.prev {
+  transform: translateX(-100%);
+}
+
+.carrusel .objeto {
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.carrusel .objeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.botones_carrusel {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.botones_carrusel button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.botones_carrusel button:hover {
+  background-color: #333;
+}
