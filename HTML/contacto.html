@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-
     <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="stylesheet" href="../CSS/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <script src="../JS/validacionFormulario.js"></script>
+    <script src="../JS/validacionFormularioContacto.js"></script>
     <script src="../JS/popupsContacto.js"></script>
 </head>
 <body>
@@ -31,18 +30,16 @@
         </nav>
 
         <div class="iconos">
-            <a href="./inicioSesion.html"><img id="user_icon" src="../IMAGENES/user_icon.svg"
-                    alt="icono de usuario"></a>
-            <a href="./carrito.html"><img id="carrito_icon" src="../IMAGENES/carrito_icon.svg"
-                    alt="icono de carrito de compra"></a>
+            <a href="./inicioSesion.html"><img id="user_icon" src="../IMAGENES/user_icon.svg" alt="icono de usuario"></a>
+            <a href="./carrito.html"><img id="carrito_icon" src="../IMAGENES/carrito_icon.svg" alt="icono de carrito de compra"></a>
         </div>
     </header>
 
     <div class="contenedor">
         <h1>Contacto</h1>
         <p>¿Tienes alguna pregunta o sugerencia? ¡Contáctanos!</p>
-        
-        <form id="contacto-form" action="mailto:correodeprueba@gmail.com" method="POST" enctype="text/plain">
+
+        <form id="contacto-form" onsubmit="return validaFormularioContacto()">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre">
             
@@ -52,10 +49,13 @@
             
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-            
+
+            <div id="errores" class="error-message"></div>
+
             <input type="submit" value="Enviar mensaje">
         </form>
     </div>
+    
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
@@ -77,20 +77,7 @@
         </nav>
     </footer>
 
-    <!-- Popup de éxito -->
-    <div id="popup-success" class="popup">
-        <div class="popup-content success">
-            <span class="close" onclick="closePopupSuccess()">&times;</span>
-            <p id="popup-message-success"></p>
-        </div>
-    </div>
 
-    <!-- Popup de error -->
-    <div id="popup-error" class="popup">
-        <div class="popup-content error">
-            <span class="close" onclick="closePopupError()">&times;</span>
-            <p id="popup-message-error"></p>
-        </div>
-    </div>
+    
 </body>
 </html>

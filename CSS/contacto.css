@@ -5,30 +5,30 @@
   text-align: center;
 }
 
-h1 {
+.contenedor h1 {
   color: rgb(0, 255, 255);
 }
 
-p {
+.contenedor p {
   font-size: 18px; 
   margin-bottom: 20px;
   color: white;
 }
 
-form {
+.contenedor form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-label {
+.contenedor label {
   display: block;
   margin-bottom: 5px;
   color: rgb(0, 255, 255);
 }
 
-input[type="text"],
-textarea {
+.contenedor input[type="text"],
+.contenedor textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -37,7 +37,7 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+.contenedor input[type="submit"] {
   background-color: rgb(0, 255, 255);
   color: black;
   padding: 10px 20px;
@@ -46,41 +46,26 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.contenedor input[type="submit"]:hover {
   background-color: rgb(0, 200, 200);
 }
 
-.popup {
+.error-message {
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
+  color: red;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid red;
+  margin-bottom: 20px;
 }
 
-.popup-content {
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
+.error-message ul {
+  padding: 0;
 }
 
-.popup-content.success {
-  background-color: black; 
-  color: white;
-  box-shadow: 0px 0px 50px rgb(0, 255, 25);
+.error-message li {
+  list-style: none;
+  text-align: left;
 }
 
-.popup-content.error {
-  background-color: black; 
-  color: white; 
-  box-shadow: 0px 0px 50px red;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
