@@ -43,11 +43,11 @@ document.getElementsByClassName("enviar")[0].addEventListener("click", function(
         }
     }
 
-    alert(`Calificación: ${calificacion}`);
+    alert("Has calificado la pagina con: "+calificacion);
     calificacionTot += calificacion; 
-    console.log(`Total calificación: ${calificacionTot}`); 
 
-   
-    document.getElementById("totalCalificacion").innerText = `Total calificación: ${calificacionTot}`;
 });
 
+document.getElementsByClassName("resetear")[0].addEventListener("click", function() {
+    location.reload();
+});
