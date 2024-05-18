@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../IMAGENES/icon.png" alt="Experto informático">
+            <h1>La Ciénaga Cósmica</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./reserva.html">Reserva</a></li>
+                <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="iconos">
+            <a href="./inicioSesion.html"><img id="user_icon" src="../IMAGENES/user_icon.svg"
+                    alt="icono de usuario"></a>
+            <a href="./carrito.html"><img id="carrito_icon" src="../IMAGENES/carrito_icon.svg"
+                    alt="icono de carrito de compra"></a>
+        </div>
+    </header>
+        <section class="productos">
+            <h2>Productos seleccionados</h2>
+            <ul>
+                <li class="producto" data-producto-id="1">
+                    <div class="carrusel_productos">
+                        <div class="carrusel">
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/foto1_1.jpeg" alt="Imagen 1">
+                          </div>
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/foto1_2.jpeg" alt="Imagen 2">
+                          </div>
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/foto1_3.jpeg" alt="Imagen 3">
+                          </div>
+                          <div class="objeto">
+                            <img src="../IMAGENES/Eventos/entrada_concierto.jpeg" alt="Imagen Entradas">
+                          </div>
+                        </div>
+                        <div class="botones_carrusel">
+                          <button class="prev">Anterior</button>
+                          <button class="next">Siguiente</button>
+                        </div>
+                    </div>
+                    <div class="producto__informacion">
+                        <h3>Entradas Firma de artistas</h3>
+                        <p>100€</p>
+                        <p>Precio Total: <span class="producto__precio-total">0</span>€</p>
+                        <input type="number" min="0" value="0" class="producto__cantidad">
+                        <button class="producto__boton-agregar">Agregar</button>
+                        <button class="producto_boton-resetear">Resetear</button>
+                    </div>
+                </li>
+                <li class="producto" data-producto-id="2">
+                  <div class="carrusel_productos">
+                    <div class="carrusel">
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft1.jpeg" alt="Imagen 1">
+                      </div>
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft2.jpeg" alt="Imagen 2">
+                      </div>
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/ft3.jpeg" alt="Imagen 3">
+                      </div>
+                      <div class="objeto">
+                        <img src="../IMAGENES/Eventos/entrada_concierto.jpeg" alt="Imagen Entrada">
+                      </div>
+                    </div>
+                    <div class="botones_carrusel">
+                      <button class="prev">Anterior</button>
+                      <button class="next">Siguiente</button>
+                    </div>
+                </div>
+                    <div class="producto__informacion">
+                        <h3>Entradas Conciertos</h3>
+                        <p>50€<p>
+                        <p>Precio Total: <span class="producto__precio-total">0</span>€</p>
+                        <input type="number" min="0" value="0" class="producto__cantidad">
+                        <button class="producto__boton-agregar">Agregar</button>
+                        <button class="producto_boton-resetear">Resetear</button>
+                    </div>
+                </li>
+                </ul>
+        </section>
+
+        <section class="resumen">
+            <h2>Resumen de compra</h2>
+            <p>Subtotal: <span id="resumen__subtotal">0</span>€</p>
+            <p>Envío: <span id="resumen__envio">0</span>€</p>
+            <p>Total: <span id="resumen__total">0</span>€</p>
+            <button id="resumen__boton-reservar"><a href="../HTML/reserva.html">Reservar Entradas</a></button>
+          </section>
+    <script src="../JS/carrito.js"></script>
+    <script src="../JS/carrusel_carrito.js"></script>
+    <footer>
+        <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
+        <div class="imagenes">
+            <img src="../IMAGENES/logo_instragram.svg" alt="logo de instagram">
+            <img src="../IMAGENES/logo_twitch.svg" alt="logo de twitch">
+            <img src="../IMAGENES/logo_twitter.svg" alt="logo de twitter">    
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./avisoLegal.html">Aviso Legal</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./crm_erp.html">CRM y ERP</a></li>
+                <li><a href="./politicaCookies.html">Política de Cookies</a></li>
+                <li><a href="./politicaPrivacidad.html">Política Privacidad</a></li>
+                <li><a href="./rss.html">RSS</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
