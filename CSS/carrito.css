@@ -45,15 +45,6 @@
   background-color: #000;
 }
 
-.producto__cantidad input[type=number]::-webkit-inner-spin-button,
-.producto__cantidad input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-  color: #fff;
-  background-color: #000;
-}
-
 .producto__informacion button {
   background-color: #000;
   color: #fff;
@@ -168,4 +159,9 @@
 
 .botones_carrusel button:hover {
   background-color: #333;
+}
+
+#resumen__boton-reservar a{
+  color: #fff;
+  text-decoration: none;
 }
