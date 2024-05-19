@@ -1,0 +1,71 @@
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor h1 {
+  color: rgb(0, 255, 255);
+}
+
+.contenedor p {
+  font-size: 18px; 
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contenedor form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(0, 255, 255);
+}
+
+.contenedor input[type="text"],
+.contenedor textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(0, 255, 255); 
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contenedor input[type="submit"] {
+  background-color: rgb(0, 255, 255);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contenedor input[type="submit"]:hover {
+  background-color: rgb(0, 200, 200);
+}
+
+.error-message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+
+.error-message ul {
+  padding: 0;
+}
+
+.error-message li {
+  list-style: none;
+  text-align: left;
+}
+
