@@ -1,20 +1,25 @@
 form{
   color: white;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 fieldset {
   display: inline-block;
-  padding: 32px;
+  padding: 40px;
   border-radius: 16px;
   border: 1px solid rgb( 0 , 255 , 255 );
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
 input{
-  text-align: center;
-  margin-top: 10px;
+  padding-left: 12px;
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 400px;
+  height: 40px;
+  background-color: rgb(15, 15, 15);
+  color: white;
 }
 
 #finalizarReserva{
@@ -25,7 +30,7 @@ input{
   background-color: rgb( 0 , 255 , 255 ) ;
   color: black;
   border-radius: 10px;
-  width: 200px;
+  width: 400px;
   height: 40px;
 }
 
@@ -35,67 +40,128 @@ input{
   transition: .4s;
 }
 
-input{
-    border-radius: 10px;
+#reiniciarReserva{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: rgb( 0 , 255 , 255 ) ;
+  color: black;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+}
+
+#reiniciarReserva:hover{
+  transform: scale(0.90);
+  box-shadow: 0 5px 5px white;
+  transition: .4s;
 }
 
 #divFecha{
-  margin-top: 20px;
+  margin-top: 10px;
   color: white;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
 }
 
 #divHora{
   margin-top: 50px;
   color: white;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
 }
 
 #divCantidad{
   margin-top: 50px;
   color: white;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
 }
 
 #divDatos{
   margin-top: 50px;
   color: white;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
+  font-weight: bold;
 }
 
-#fecha{
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+#fecha {
+  text-align: center;
 }
 
-#hora{
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+#hora {
+  text-align: center;
 }
 
-#cantidad{
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+#cantidad {
+  text-align: center;
 }
 
-#inputContacto{
-  border-radius: 10px;
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  margin-right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  transform: scale(2.6);
+}
+
+#divInputGenerico{
+  position: relative;
+}
+
+#labelFlotanteNombre {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
+}
+
+#labelFlotanteCorreo {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
+}
+
+#labelFlotanteTelefono {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
+}
+
+.error-mensaje {
+  color: #ff0000;
+  font-size: 15px;
+  text-align: left;
+}
+
+.error-mensaje ul {
+  padding: 0;
+  list-style: circle;
+  margin-left: 30px;
+}
+.error-mensaje li {
+  margin-bottom: 5px;
+}
+
+#errores{
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid red;
+  display: none;
 }

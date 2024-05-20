@@ -39,7 +39,7 @@
     </header>
 
 
-    <form>
+    <form id="formularioReserva" onsubmit="return validandoFormulario()">
         <fieldset>
             <div id="divFecha">
                 <label for="fecha">Selecciona un dia: </label>
@@ -60,27 +60,34 @@
                 <input type="number" id="cantidad" name="cantidad" min="0" max="100" step="1">
             </div>
 
-
-
-
-
             <div id="divDatos">
-                <label for="nombre">Datos de contacto: </label>
+                <label for="divDatos">Datos de contacto: </label>
             </div>
-            <div>
-                <input type="text" id="inputContacto" name="nombre" placeholder="Nombre de reserva">
+            <div id="divInputGenerico">
+                <input type="text" id="nombre" name="nombre">
+                <label for="nombre" id="labelFlotanteNombre">Nombre de reserva: </label>
             </div>
-            <div>
-                <input type="email" id="inputContacto" name="correo" placeholder="correo@ejemplo.com">
+            <div id="divInputGenerico">
+                <input type="email" id="correo" name="correo">
+                <label for="correo" id="labelFlotanteCorreo">Correo: </label>
             </div>
-            <div>
-                <input type="tel" id="inputContacto" name="telefono" placeholder="Número de teléfono">
+            <div id="divInputGenerico">
+                <input type="tel" id="telefono" name="telefono">
+                <label for="telefono" id="labelFlotanteTelefono">Teléfono: </label>
             </div>
         </fieldset>
-        <br>
+
+        <div id="errores" class="error-mensaje"></div>
+
+        <div>
             <input type="submit" value="Finalizar Reserva" id="finalizarReserva">
-            <input type="reset" value="Reiniciar" id="finalizarReserva">
+        </div>
+        <div>
+            <input type="reset" value="Reiniciar" id="reiniciarReserva">
+        </div>
     </form>
+
+    <script src="../JS/reserva.js"></script>
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
