@@ -11,7 +11,7 @@ const productosSeleccionados = [];
 const subtotalElement = document.getElementById("resumen__subtotal"); // Muestra el subtotal
 const envioElement = document.getElementById("resumen__envio"); // Muestra el costo de envío
 const totalElement = document.getElementById("resumen__total"); // Muestra el total
-const botonReservarElement = document.getElementById("resumen__boton-reservar"); // Botón "Reservar Entradas"
+const botonReservarElement = document.getElementById("resumen__boton-comprar"); // Botón "Reservar Entradas"
 const botonesAgregar = document.querySelectorAll(".producto__boton-agregar"); // Selecciona todos los botones "Agregar"
 const botonesResetear = document.querySelectorAll(".producto_boton-resetear"); // Selecciona todos los botones "Resetear"
 
