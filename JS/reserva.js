@@ -106,7 +106,6 @@ function validandoFormulario() {
   
     if(errores.length > 0){
         mostrarErrores(errores);
-        console.log(hora);
         return false;
     };
 
