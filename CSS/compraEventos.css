@@ -52,6 +52,35 @@ input{
   transition: .4s;
 }
 
+#labelDNI, #labelNombreApellidos, #labelCorreo {
+  position: absolute;
+  margin-left: 36.5%;
+  left: 15px;
+  top: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
+}
+
+#DNI, #nombreApellidos, #correo {
+  position: relative;
+}
+
+#inputDNI, #inputnombreApellidos, #inputcorreo {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#inputnombreTitular, #inputnumeroTarjeta, #inputCVV{
+  text-align: left;
+  padding-left: 15px;
+}
+
+#inputfechaCaducidad {
+  text-align: right;
+  padding-right: 15px;
+}
+
 #divDatosBancarios {
   text-align: center;
 }
@@ -69,14 +98,13 @@ input{
 
 #labelNombreTitular, #labelNumeroTarjeta, #labelFechaCaducidad, #labelCVV {
   position: absolute;
+  margin-left: 36.5%;
   left: 15px;
-  top: 3px;
+  top: 28px;
   color: rgb(255, 255, 255);
   font-size: 15px;
   transition: .4s;
 }
-
-
 
 
 
@@ -133,7 +161,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .error-mensaje {
-  color: #ff0000;
+  color: white;
   font-size: 15px;
   text-align: left;
 }
