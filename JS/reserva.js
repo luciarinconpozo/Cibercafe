@@ -41,9 +41,18 @@ document.getElementById("telefono").addEventListener("blur", function () {
 });
 
 function validandoFormulario() {
-    //Quitar los errores al reiniciar
-    document.getElementById("formularioReserva").addEventListener("reset", function() {
+    document.getElementById("reiniciarReserva").addEventListener("click", function() {
+        //Quitar los errores al reiniciar
         document.getElementById("errores").style.display = "none";
+
+        const formularioReserva = document.getElementById("formularioReserva");
+        formularioReserva.reset();
+
+        //Reestablecer labels
+        const inputs = formularioReserva.querySelectorAll("input");
+        inputs.forEach(input => {
+            input.dispatchEvent(new Event('blur'));
+        });
     });
     
     //Accedo a los datos
@@ -57,15 +66,15 @@ function validandoFormulario() {
     let errores = [];
 
     //Fecha
-    if (!fecha) {
+    if (fecha === "") {
         errores.push("Por favor, ingrese una fecha");
     };
     //Hora
-    if (!hora) {
+    if (hora === "") {
         errores.push("Por favor, seleccione una hora")
     };
     //Cantidad
-    if (cantidad <= 0 || cantidad >= 100 || !cantidad) {
+    if (cantidad === 0) {
         errores.push('Por favor, ingrese el número de asistentes');
     };
 
@@ -78,7 +87,7 @@ function validandoFormulario() {
     if (correo === "") {
         errores.push("Por favor, ingresa tu correo electrónico");
     } else {
-        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2, 4}$/;
+        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
         if (!expresionCorreo.test(correo)) {
             errores.push("Por favor, ingrese una direccion de correo válida")
@@ -89,7 +98,7 @@ function validandoFormulario() {
     if (telefono === "") {
         errores.push("Ingrese su número de teléfono");
     } else {
-        let expresion= /^\d{9}$/;
+        let expresion= /^[0-9]{9}$/;
         if (!expresion.test(telefono)) {
 
             errores.push("El telefono debe tener minimo nueve digitos");
@@ -101,7 +110,9 @@ function validandoFormulario() {
     if(errores.length > 0){
         mostrarErrores(errores);
         return false;
-    };
+    } else {
+        alert("Su reserva ha sido realizada con éxito")
+    }
 
     return true;
 };
