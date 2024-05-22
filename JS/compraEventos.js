@@ -228,7 +228,7 @@ function validandoFormulario() {
     if (InputCorreo === "") {
         errores.push("Por favor, ingresa tu correo electrónico");
     } else {
-        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2-4}$/;
+        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
         if (!expresionCorreo.test(InputCorreo)) {
             errores.push("Por favor, ingrese una direccion de correo válida")
@@ -239,7 +239,9 @@ function validandoFormulario() {
     if(errores.length > 0){
         mostrarErrores(errores);
         return false;
-    };
+    } else {
+        alert("Su compra ha sido realizada con éxito")
+    }
 
     return true;
 };
