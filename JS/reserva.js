@@ -1,11 +1,3 @@
-//Accedo a los datos
-const fecha = document.getElementById("fecha").value;
-const hora = document.getElementById("hora").value;
-const cantidad = document.getElementById("cantidad").value;
-const nombre = document.getElementById("nombre").value;
-const correo = document.getElementById("correo").value;
-const telefono = document.getElementById("telefono").value;
-
 //Los label flotantes
 document.getElementById("nombre").addEventListener("focus", function () {
     document.getElementById("labelFlotanteNombre").style.top = "0px";
@@ -13,6 +5,7 @@ document.getElementById("nombre").addEventListener("focus", function () {
 });
 
 document.getElementById("nombre").addEventListener("blur", function () {
+    const nombre = document.getElementById("nombre").value;
     if (nombre === "") {
         document.getElementById("labelFlotanteNombre").style.top = "30px";
         document.getElementById("labelFlotanteNombre").style.fontSize = "15px";
@@ -26,7 +19,8 @@ document.getElementById("correo").addEventListener("focus", function () {
 });
 
 document.getElementById("correo").addEventListener("blur", function () {
-    if (nombre === "") {
+    const correo = document.getElementById("correo").value;
+    if (correo === "") {
         document.getElementById("labelFlotanteCorreo").style.top = "30px";
         document.getElementById("labelFlotanteCorreo").style.fontSize = "15px";
     }
@@ -39,7 +33,8 @@ document.getElementById("telefono").addEventListener("focus", function () {
 });
 
 document.getElementById("telefono").addEventListener("blur", function () {
-    if (nombre === "") {
+    const telefono = document.getElementById("telefono").value;
+    if (telefono === "") {
         document.getElementById("labelFlotanteTelefono").style.top = "30px";
         document.getElementById("labelFlotanteTelefono").style.fontSize = "15px";
     }
@@ -83,7 +78,7 @@ function validandoFormulario() {
     if (correo === "") {
         errores.push("Por favor, ingresa tu correo electrónico");
     } else {
-        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2-4}$/;
+        let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2, 4}$/;
 
         if (!expresionCorreo.test(correo)) {
             errores.push("Por favor, ingrese una direccion de correo válida")
@@ -91,15 +86,14 @@ function validandoFormulario() {
     };
 
     // Validar que el teléfono no esté vacío
-    if (telefono !== "") {
-
+    if (telefono === "") {
+        errores.push("Ingrese su número de teléfono");
+    } else {
         let expresion= /^\d{9}$/;
         if (!expresion.test(telefono)) {
 
             errores.push("El telefono debe tener minimo nueve digitos");
         };
-    }else{
-        errores.push("El telefono debe tener minimo nueve digitos");
     };
 
     //Mostrar Errores

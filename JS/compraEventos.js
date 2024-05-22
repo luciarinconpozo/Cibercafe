@@ -134,9 +134,18 @@ document.getElementById("inputcorreo").addEventListener("blur", function () {
 });
 
 function validandoFormulario() {
-    //Quitar los errores al reiniciar y mas
-    document.getElementById("formularioCompraEventos").addEventListener("reset", function() {
+    document.getElementById("reiniciar").addEventListener("click", function() {
+        //Quitar los errores al reiniciar
         document.getElementById("errores").style.display = "none";
+
+        const formulario = document.getElementById("formularioCompraEventos");
+        formulario.reset();
+
+        //Reestablecer labels
+        const inputs = formulario.querySelectorAll("input");
+        inputs.forEach(input => {
+            input.dispatchEvent(new Event('blur'));
+        });
     });
     
     //Accedo a los datos
