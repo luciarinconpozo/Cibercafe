@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/header_footer.css">
@@ -14,7 +15,7 @@
 
     <header>
         <div class="logo">
-            <img src="../IMAGENES/icon.png" alt="Experto informático">
+            <a href="https://vm.tiktok.com/ZGeX9XvGp/"><img src="../IMAGENES/icon.png" alt="Experto informático"></a>
             <h1>La Ciénaga Cósmica</h1>
         </div>
 
@@ -36,58 +37,82 @@
         </div>
     </header>
 
-    <form>
+    <form id="formularioCompraEventos" onsubmit="return validandoFormulario()">
         <div id="tituloDireccion">
             <label for="hora" id="titulo">Ingrese su dirección: </label>
         </div>
         <div id="divDireccion">
             <fieldset id="datosDireccion">
-                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion">
-                <input type="text" id="Direccion" name="Ciudad" placeholder="Ciudad">
-                <input type="number" id="Direccion" name="CodigoPostal" placeholder="Codigo Postal">
+                <div id="divDireccion">
+                    <input type="text" id="direccion" name="Direccion">
+                    <label for="direccion" id="labelFlotanteDireccion">Direccion: </label>
+                </div>
+                <div id="divCiudad">
+                    <input type="text" id="ciudad" name="Ciudad">
+                    <label for="ciudad" id="labelFlotanteCiudad">Ciudad: </label>
+                </div>
+                <div id="divCodigoPostal">
+                    <input type="text" id="codigoPostal" name="CodigoPostal">
+                    <label for="codigoPostal" id="labelFlotanteCodigoPostal">Código Postal: </label>
+                </div>
             </fieldset>
         </div>
-        <div id="datosBancarios">
-            <label for="hora">Datos bancarios: </label>
+        <div id="divDatosBancarios">
+            <div id="datosBancarios">
+                <label for="hora">Datos bancarios: </label>
+            </div>
+            <div id="nombreTitular">
+                <input type="text" id="inputnombreTitular" name="NombreDelTitular">
+                <label id="labelNombreTitular">Nombre del titular: </label>
+            </div>
+            <div id="numeroTarjeta">
+                <input type="text" id="inputnumeroTarjeta" name="NumeroTarjeta">
+                <label id="labelNumeroTarjeta">Numero de la tarjeta: </label>
+            </div>
+            <div id="fechaCaducidad">
+                <input type="date" id="inputfechaCaducidad" name="FechaCaducidad">
+                <label for="inputfechaCaducidad" id="labelFechaCaducidad">Fecha de caducidad: </label>
+            </div>
+            <div id="CVV">
+                <input type="text" id="inputCVV" name="CVV">
+                <label id="labelCVV">CVV: </label>
+            </div>
         </div>
-        <div id="nombreTitular">
-            <input type="text" id="inputBancario" name="NombreDelTitular" placeholder="Nombre del Titular">
-        </div>
-        <div id="numeroTarjeta">
-            <input type="number" id="inputBancario" name="NumeroTarjeta" placeholder="Numero Tarjeta">
-        </div>
-        <div id="fechaCaducidad">
-            <input type="date" id="inputBancario" name="FechaCaducidad" placeholder="Fecha Caducidad">
-        </div>
-        <div id="CVV">
-            <input type="number" id="inputBancario" name="CVV" placeholder="CVV">
-        </div>
-
 
         <div id="datosCliente">
-            <label for="hora" >Datos del cliente: </label>
+            <label for="hora">Datos del cliente: </label>
         </div>
         <div id="DNI">
-            <input type="text" id="inputCliente" name="DNI" placeholder="DNI">
+            <input type="text" id="inputDNI" name="DNI">
+            <label for="inputDNI" id="labelDNI">DNI: </label>
         </div>
         <div id="nombreApellidos">
-            <input type="text" id="inputCliente" name="NombreApellidos" placeholder="Nombre y Apellidos">
+            <input type="text" id="inputnombreApellidos" name="NombreApellidos">
+            <label for="inputnombreApellidos" id="labelNombreApellidos">Nombre y Apellidos</label>
         </div>
         <div id="correo">
-            <input type="email" id="inputCliente" name="Correo" placeholder="Correo">
+            <input type="text" id="inputcorreo" name="Correo">
+            <label for="inputcorreo" id="labelCorreo">Correo: </label>
         </div>
 
+        <div id="errores" class="error-mensaje"></div>
+
         <div id="divFinalizarCompra">
-            <input type="submit" id="finalizarCompra" name="Enviar" value="Finalizar Compra">
+            <input type="submit" id="finalizar" value="Finalizar Compra">
+        </div>
+        <div id="divReiniciarCompra">
+            <input type="button" id="reiniciar" value="Reiniciar">
         </div>
     </form>
+
+    <script src="../JS/compraEventos.js"></script>
 
     <footer>
         <p>&copy; LA CIÉNAGA CÓSMICA 2024</p>
         <div class="imagenes">
-            <img src="../IMAGENES/logo_instragram.svg" alt="logo de instagram">
-            <img src="../IMAGENES/logo_twitch.svg" alt="logo de twitch">
-            <img src="../IMAGENES/logo_twitter.svg" alt="logo de twitter">    
+            <a href="https://www.instagram.com/"><img src="../IMAGENES/logo_instragram.svg" alt="logo de instagram"></a>
+            <a href="https://www.twitch.tv/"><img src="../IMAGENES/logo_twitch.svg" alt="logo de twitch"></a>
+            <a href="https://x.com/?lang=es"><img src="../IMAGENES/logo_twitter.svg" alt="logo de twitter"></a>
 
         </div>
 
@@ -103,4 +128,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

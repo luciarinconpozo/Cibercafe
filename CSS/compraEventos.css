@@ -1,23 +1,29 @@
 form{
-  margin-top: 40px;
   color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+input{
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 400px;
+  height: 40px;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  text-align: center;
 }
 
 #tituloDireccion{
   color: white;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-right:390px;
-}
-
-#titulo{
   font-size: 33px;
+  margin-right:420px;
   font-weight: bold;
 }
 
-#datosDireccion {
-  display: inline-block;
+/*Fieldset*/
+#datosDireccion { 
+  display: inline;
   border-radius: 10px;
   margin: 10px;
   margin-bottom: 20px;
@@ -25,107 +31,155 @@ form{
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); 
 }
 
-#divDireccion{
-  text-align: center;
-  margin-top: 10px;
+#divDireccion, #divCiudad, #divCodigoPostal {
+  display: inline;
+  position: relative;
 }
 
-#Direccion{
-  border-radius: 10px;
-  width: 250px;
+#direccion, #ciudad, #codigoPostal {
+  text-align: left;
+  padding-left: 15px;
+  width: 300px;
   height: 30px;
-  background-color: rgb(15, 15, 15);
-  color: white;
 }
 
-#datosBancarios{
-  font-size: 33px;
-  font-weight: bold;
-  margin-top: 60px;
-  text-align: center;
-  color: white;
-}
-
-#nombreTitular{
-  text-align: center;
-  margin-top: 3px;
-}
-
-#numeroTarjeta{
-  text-align: center;
-  margin-top: 3px;
-}
-
-#fechaCaducidad{
-  text-align: center;
-  margin-top: 3px;
-}
-
-#CVV{
-  text-align: center;
-  margin-top: 3px;
-}
-
-input{
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-#datosCliente{
-  font-size: 33px;
-  font-weight: bold;
-  margin-top: 60px;
-  text-align: center;
+#labelFlotanteDireccion, #labelFlotanteCiudad, #labelFlotanteCodigoPostal {
+  position: absolute;
+  left: 15px;
+  top: 3px;
   color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
 }
 
-#inputBancario{
-  border-radius: 10px;
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+#labelDNI, #labelNombreApellidos, #labelCorreo {
+  position: absolute;
+  margin-left: 36.5%;
+  left: 15px;
+  top: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
 }
 
-#inputCliente{
-  border-radius: 10px;
-  width: 400px;
-  height: 40px;
-  background-color: rgb(15, 15, 15);
-  color: white;
+#DNI, #nombreApellidos, #correo {
+  position: relative;
 }
 
-#DNI{
+#inputDNI, #inputnombreApellidos, #inputcorreo {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#inputnombreTitular, #inputnumeroTarjeta, #inputCVV{
+  text-align: left;
+  padding-left: 15px;
+}
+
+#inputfechaCaducidad {
+  text-align: right;
+  padding-right: 15px;
+}
+
+#divDatosBancarios {
   text-align: center;
-  margin-top: 3px;
 }
 
-#nombreApellidos{
-  text-align: center;
-  margin-top: 3px;
+#datosBancarios, #datosCliente{
+  margin-top: 60px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
-#correo{
-  text-align: center;
-  margin-top: 3px;
+#nombreTitular, #numeroTarjeta, #fechaCaducidad, #CVV {
+  display: block;
+  position: relative;
 }
 
-#finalizarCompra{
+#labelNombreTitular, #labelNumeroTarjeta, #labelFechaCaducidad, #labelCVV {
+  position: absolute;
+  margin-left: 36.5%;
+  left: 15px;
+  top: 28px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: .4s;
+}
+
+
+
+
+
+
+#finalizar{
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 10px;
   background-color: rgb( 0 , 255 , 255 ) ;
   color: black;
   border-radius: 10px;
-  width: 200px;
+  width: 400px;
   height: 40px;
 }
 
-#divFinalizarCompra{
-  margin-top: 60px;
-  text-align: center;
-}
-
-#finalizarCompra:hover{
+#finalizar:hover{
   transform: scale(0.90);
   box-shadow: 0 5px 5px white;
   transition: .4s;
+}
+
+#reiniciar{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: rgb( 0 , 255 , 255 ) ;
+  color: black;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+}
+
+#reiniciar:hover{
+  transform: scale(0.90);
+  box-shadow: 0 5px 5px white;
+  transition: .4s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  margin-right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  transform: scale(2.6);
+}
+
+.error-mensaje {
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+.error-mensaje ul {
+  padding: 0;
+  list-style: circle;
+  margin-left: 30px;
+}
+.error-mensaje li {
+  margin-bottom: 5px;
+}
+
+#errores{
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid red;
+  display: none;
 }
