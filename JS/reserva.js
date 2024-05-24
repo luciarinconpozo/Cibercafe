@@ -71,10 +71,10 @@ function validandoFormulario() {
     };
     //Hora
     if (hora === "") {
-        errores.push("Por favor, seleccione una hora")
+        errores.push("Por favor, seleccione una hora");
     };
     //Cantidad
-    if (cantidad === 0) {
+    if (cantidad === "") {
         errores.push('Por favor, ingrese el número de asistentes');
     };
 
@@ -90,7 +90,7 @@ function validandoFormulario() {
         let expresionCorreo = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
         if (!expresionCorreo.test(correo)) {
-            errores.push("Por favor, ingrese una direccion de correo válida")
+            errores.push("Por favor, ingrese una direccion de correo válida");
         };
     };
 
