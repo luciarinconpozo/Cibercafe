@@ -10,11 +10,13 @@ document.getElementsByClassName("enviar")[0].addEventListener("click", function(
 if (servicioEmplead!=null&&tiempoEspera!=null&&comodidad!=null) {
     if (servicioEmplead) {
         if (servicioEmplead.className === "menos4") {
-            calificacion -= 4;
+            calificacion += 0;
         } else if (servicioEmplead.className === "menos2") {
-            calificacion -= 2;
-        } else if (servicioEmplead.className === "mas2") {
+            calificacion += 1;
+        }else if (servicioEmplead.className === "cero") {
             calificacion += 2;
+        } else if (servicioEmplead.className === "mas2") {
+            calificacion += 3;
         } else if (servicioEmplead.className === "mas4") {
             calificacion += 4;
         }
@@ -22,11 +24,13 @@ if (servicioEmplead!=null&&tiempoEspera!=null&&comodidad!=null) {
 
     if (tiempoEspera) {
         if (tiempoEspera.className === "menos4") {
-            calificacion -= 4;
+            calificacion += 0;
         } else if (tiempoEspera.className === "menos2") {
-            calificacion -= 2;
-        } else if (tiempoEspera.className === "mas2") {
+            calificacion += 1;
+        } else if (tiempoEspera.className === "cero") { 
             calificacion += 2;
+        }else if (tiempoEspera.className === "mas2") {
+            calificacion += 3;
         } else if (tiempoEspera.className === "mas4") {
             calificacion += 4;
         }
@@ -34,17 +38,19 @@ if (servicioEmplead!=null&&tiempoEspera!=null&&comodidad!=null) {
 
     if (comodidad) {
         if (comodidad.className === "menos4") {
-            calificacion -= 4;
+            calificacion += 0;
         } else if (comodidad.className === "menos2") {
-            calificacion -= 2;
-        } else if (comodidad.className === "mas2") {
+            calificacion += 1;
+        } else if (comodidad.className === "cero") { 
             calificacion += 2;
+        }else if (comodidad.className === "mas2") {
+            calificacion += 3;
         } else if (comodidad.className === "mas4") {
             calificacion += 4;
         }
     }
 
-    alert("Has calificado la pagina con: "+((calificacion*10)/12));
+    alert("Has calificado la pagina con: "+((calificacion*10)/12)+"/10");
     calificacionTot += calificacion; 
 }else{
     alert("Hay campos vacios");
